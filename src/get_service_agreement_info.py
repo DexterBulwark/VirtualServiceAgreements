@@ -7,8 +7,20 @@ def get_info_from_user():
     return office, service
 
 
-def get_agreement_base(office, service):
+def get_agreement_base(office: str, service: str):
     """
     Get the agreement from the user based on location and service
     """
-    pass
+    agreement_base = "The service agreement for {} in {} will be finalized here".format(
+        service, office
+    )
+    return agreement_base
+
+
+def get_additional_info():
+    additional_info = []
+    while True:
+        additional_info.append(input("What additional information is needed? "))
+        if input("Is there more information needed? (y/n) ") == "n":
+            break
+    return additional_info
