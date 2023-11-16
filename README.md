@@ -10,7 +10,7 @@ There are 4 notable files:
 - **service_agreement_filled.json**
     - Example of filled json data
 - **serviceAgreementEmpty.html**
-    - Sample html template with values to be filled. ***{{example}}***
+    - HTML template with fields to be filled. ***{{exampleField}}***
 - **serviceAgreementFilled.html**
     - Example of fully filled service agreement
 
@@ -23,7 +23,7 @@ The majority of fields must be required in the json. The only fields that are no
 - `savedOn` (this should be filled on our end when the json is recieved)
 
 ### Service Lists
-`initialServices` and `recurringServices` are list and can have any number of items added. They will always need to follow the following format:
+`initialServices` and `recurringServices` are both list and can have any number of items. They will always need to follow the following format:
 
 **Initial Service**
 ```json
@@ -46,7 +46,7 @@ The majority of fields must be required in the json. The only fields that are no
 ],
 ```
 
-And should appear in the HTML like this:
+And should be inserted in the HTML like this:
 
 **Initial Service**
 ```html
@@ -63,6 +63,22 @@ And should appear in the HTML like this:
 </li>
 
 ```
+
+<details>
+<summary>Multiple Recurring Service Example</summary>
+
+```html
+<li>
+  <span class="service-name">Pest Control</span>
+  <span class="service-cost">$56.00 <i>(Monthly)</i></span>
+</li>
+<li>
+  <span class="service-name">Rodent Control</span>
+  <span class="service-cost">$60.00 <i>(Per Service)</i></span>
+</li>
+```
+
+</details>
 
 ### Signature
 
