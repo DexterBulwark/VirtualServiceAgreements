@@ -1,0 +1,63 @@
+{
+  "officeInfo": {
+    "officeId": 0,
+    "officeStreetAddress": "",
+    "officeCity": "",
+    "officeState": "",
+    "officeZipCode": "",
+    "officePhoneNumber": "",
+    "officeLicense": ""
+  },
+  "customerInfo": {
+    "customerName": "",
+    "customerStreetAddress": "",
+    "customerCity": "",
+    "customerState": "",
+    "customerZipCode": "",
+    "customerPhoneNumber": "",
+    "customerEmail": ""
+  },
+  "billingInfo": {
+    "billingName": "",
+    "billingStreetAddress": "",
+    "billingCity": "",
+    "billingState": "",
+    "billingZipCode": ""
+  },
+  "serviceInfo": {
+    "lengthOfAgreement": "",
+    "treatmentType": "",
+    "initialServiceDate": "",
+    "initialServiceTime": "",
+    "initialServices": [
+      {
+        "serviceName": "",
+        "serviceCost": 0.00
+      }
+    ],
+    "initialServicesTotalCost": 0.00,
+    "recurringServices": [
+      {
+        "serviceName": "",
+        "serviceCost": 0.00
+      }
+    ],
+    "recurringServicesTotalCost": 0.00,
+    "amountToBePaid": 0.00,
+    "paymentFrequency": "Per Service",
+    "paymentType": ""
+  },
+  "finePrint": "",
+  "signature": "",
+  "timestamps": {
+    "createdOn": "",
+    "openedOn": "",
+    "signedOn": "",
+    "submittedOn": "",
+    "savedOn": ""
+  },
+  "witness":{
+      "name": "",
+      "hrNumber": ""
+  }
+}
