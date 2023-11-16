@@ -25,12 +25,16 @@ The majority of fields must be required in the json. The only fields that are no
 ### Service Lists
 `initialServices` and `recurringServices` are both list and can have any number of items. They will always need to follow the following format:
 
+<details>
+<summary>Service Example</summary>
+
+
 **Initial Service**
 ```json
 "initialServices": [
     {
         "serviceName": "",
-        "serviceCost": 0.00
+        "serviceCost": 0.0
     }
 ],
 ```
@@ -40,7 +44,7 @@ The majority of fields must be required in the json. The only fields that are no
 "recurringServices": [
     {
         "serviceName": "",
-        "serviceCost": 0.00,
+        "serviceCost": 0.0,
         "paymentFrequency": ""
     }
 ],
@@ -64,8 +68,23 @@ And should be inserted in the HTML like this:
 
 ```
 
-<details>
-<summary>Multiple Recurring Service Example</summary>
+
+**Example with multiple services**
+```json
+"recurringServices": [
+    {
+        "serviceName": "Pest Control",
+        "serviceCost": 56.0,
+        "paymentFrequency": "Monthly"
+    },
+    {
+        "serviceName": "Rodent Control",
+        "serviceCost": 60.0,
+        "paymentFrequency": "Per Service"
+    }
+
+],
+```
 
 ```html
 <li>
