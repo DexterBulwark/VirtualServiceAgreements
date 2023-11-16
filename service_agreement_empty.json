@@ -39,12 +39,10 @@
     "recurringServices": [
       {
         "serviceName": "",
-        "serviceCost": 0.00
+        "serviceCost": 0.00,
+        "paymentFrequency": ""
       }
     ],
-    "recurringServicesTotalCost": 0.00,
-    "amountToBePaid": 0.00,
-    "paymentFrequency": "Per Service",
     "paymentType": ""
   },
   "finePrint": "",
