@@ -224,5 +224,17 @@ Empty JSON
 ```
 </details>
 
+<details>
+<summary>Example API</summary>
+
+Here is an example of a function API that does this. The API is written in Python and should not be used in production. For speed and reliablility we would like for it to be written in PHP. Please reach out to dexterd@bulwarkpest.com if you would like the raw Python code.
+
+The API can be used [HERE](https://api-tools.tem-pest.com/v1/requestServiceAgreements?officeId=1)
+
+Interactive documentation can be found [HERE](https://api-tools.tem-pest.com/v1/docs#/Service%20Agreement/request_service_agreement_requestServiceAgreements_get)
+
+
+</details>
+
 
 </details>
