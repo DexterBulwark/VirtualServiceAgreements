@@ -14,9 +14,6 @@ The majority of fields must be required in the json. The only fields that are no
 **GENERAL PEST**
 - `services->recurring` (would not be needed for One Time Treatments)
 
-**TERMITE CONTROL**
-- `recurringTermiteServices` (would not be needed for One Time Treatments)
-
 ### Service Lists
 All `initial services` and `recurring services` are list and can have any number of items. They will always need to follow the following format:
 
