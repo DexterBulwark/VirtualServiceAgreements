@@ -1,0 +1,81 @@
+{
+    "title": "",
+    "officeInfo": 
+    {
+        "id": 0,
+        "license": "",
+        "name": "",
+        "streetAddress": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "phoneNumber": ""
+    },
+    "customerInfo": 
+    {
+        "name": "",
+        "streetAddress": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "phoneNumber": "",
+        "email": "",
+        "billingAddress": "",
+        "billingCity": "",
+        "billingState": "",
+        "billingZip": "",
+        "billingName": ""
+    },
+    "services": 
+    {
+        "initialWarrantyExtension": 
+        [
+            {
+                "name": "",
+                "price": 0.0
+            }
+        ],
+        "initialTotalPrice": 0.0,
+        "recurringWarrantyExtension":
+        [
+            {
+                "name": "",
+                "price": 0.0,
+                "frequency": ""
+            }
+        ]
+    },
+    "treatmentInfo": 
+    {
+        "newHomeClosingDate": "",
+        "buildersGuaranteeExpirationDate": "",
+        "lengthOfWarrantyExtension": "",
+        "bulwarksGuaranteeExpirationDate": "",
+        "treatmentType": "",
+        "paymentType": ""
+    },
+    "fineprint": 
+    [
+        {
+            "": ""
+        }
+    ],
+    "signature": 
+    {
+        "signee": "",
+        "base64Image": ""
+    },
+    "timestamps": 
+    {
+        "createdOn": "",
+        "viewedOn": "",
+        "signedOn": "",
+        "submittedOn": "",
+        "savedOn": ""
+    },
+    "witness": 
+    {
+        "name": "",
+        "hrNumber": ""
+    }
+}

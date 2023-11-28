@@ -1,0 +1,78 @@
+{
+    "title": "",
+    "officeInfo": 
+    {
+        "id": 0,
+        "license": "",
+        "name": "",
+        "streetAddress": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "phoneNumber": ""
+    },
+    "customerInfo": 
+    {
+        "name": "",
+        "streetAddress": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "phoneNumber": "",
+        "email": "",
+        "billingAddress": "",
+        "billingCity": "",
+        "billingState": "",
+        "billingZip": "",
+        "billingName": ""
+    },
+    "services": 
+    {
+        "initial": 
+        [
+            {
+                "name": "",
+                "price": 0.0
+            }
+        ],
+        "initialTotalPrice": 0.0,
+        "recurring":
+        [
+            {
+                "name": "",
+                "price": 0.0,
+                "frequency": ""
+            }
+        ]
+    },
+    "treatmentInfo": 
+    {
+        "lengthOfAgreement": "",
+        "TreatmentType": "",
+        "paymentType": ""
+    },
+    "fineprint": 
+    [
+        {
+            "": ""
+        }
+    ],
+    "signature": 
+    {
+        "signee": "",
+        "base64Image": ""
+    },
+    "timestamps": 
+    {
+        "createdOn": "",
+        "viewedOn": "",
+        "signedOn": "",
+        "submittedOn": "",
+        "savedOn": ""
+    },
+    "witness": 
+    {
+        "name": "",
+        "hrNumber": ""
+    }
+}

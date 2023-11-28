@@ -4,7 +4,7 @@ This is the template for a digital service agreement. Using the JSON and HTML te
 
 ## Content
 
-There are 4 notable files:
+This repository contains examples of the expected JSON to receive for service agreements and the HTML that it should be converted to.:
 - **service_agreement_empty.json**
     - Template for json data
 - **service_agreement_filled.json**

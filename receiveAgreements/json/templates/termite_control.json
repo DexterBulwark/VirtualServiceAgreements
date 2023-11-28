@@ -1,0 +1,77 @@
+{
+    "title": "",
+    "officeInfo": 
+    {
+        "id": 0,
+        "license": "",
+        "name": "",
+        "streetAddress": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "phoneNumber": ""
+    },
+    "customerInfo": 
+    {
+        "name": "",
+        "streetAddress": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "phoneNumber": "",
+        "email": "",
+        "billingAddress": "",
+        "billingCity": "",
+        "billingState": "",
+        "billingZip": "",
+        "billingName": ""
+    },
+    "services": 
+    {
+        "termiteProtectionEstimate": 
+        [
+            {
+                "name": "",
+                "price": 0.0
+            }
+        ],
+        "estimatedInitialTotalCharge": 0.0,
+        "recurringTermiteServices":
+        [
+            {
+                "name": "",
+                "price": 0.0,
+                "frequency": ""
+            }
+        ]
+    },
+    "treatmentInfo": {
+        "structureToBeTreated": "",
+        "agreementLength": "",
+        "paymentType": ""
+    },
+    "fineprint": 
+    [
+        {
+            "": ""
+        }
+    ],
+    "signature": 
+    {
+        "signee": "",
+        "base64Image": ""
+    },
+    "timestamps": 
+    {
+        "createdOn": "",
+        "viewedOn": "",
+        "signedOn": "",
+        "submittedOn": "",
+        "savedOn": ""
+    },
+    "witness": 
+    {
+        "name": "",
+        "hrNumber": ""
+    }
+}

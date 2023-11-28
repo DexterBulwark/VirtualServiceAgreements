@@ -1,0 +1,27 @@
+{
+  "officeId": 0,
+  "license": "",
+  "officeName": "",
+  "streetAddress": "",
+  "city": "",
+  "state": "",
+  "zip": "",
+  "phoneNumber": "",
+  "finePrints": 
+    {
+        "nonBuilderSalesSubType": 
+        [
+            {
+                "title": "",
+                "content": ""
+            }
+        ],
+        "builderSalesSubType": 
+        [
+            {
+                "title": "",
+                "content": ""
+            }
+        ]
+    }
+}

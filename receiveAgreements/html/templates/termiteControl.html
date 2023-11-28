@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"
+    />
+
+    <title>Termite Control Service Agreement</title>
+
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: rgb(213, 214, 214);
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .service-name {
+        /* Aligns to the left */
+        text-align: left;
+      }
+
+      .service-cost {
+        /* Aligns to the right */
+        text-align: right;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      #content {
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        background-color: rgb(255, 255, 255);
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+      }
+
+      .title {
+        color: rgb(116, 17, 46);
+      }
+
+      #guarantee {
+        color: rgb(116, 17, 46);
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      #guaranteePar {
+        text-align: center;
+        font-size: 17px;
+      }
+      .form-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px; /* Adds space between the boxes */
+      }
+
+      .form-section {
+        display: flex;
+        flex-direction: column; /* Stack label and box vertically */
+        margin-bottom: 20px;
+      }
+
+      .signature-section {
+        flex: 3; /* Takes up more space */
+      }
+
+      .date-section {
+        flex: 1; /* Takes up less space */
+      }
+
+      .signature-box,
+      .date-box {
+        border: 1px solid rgb(119, 107, 228);
+        padding: 10px;
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        border-radius: 10px;
+        align-items: flex-start; /* Align label to the start */
+        justify-content: flex-end; /* Move signature/date lines to the bottom */
+        height: 150px;
+        margin-top: 5px; /* Spacing between label and box */
+      }
+
+      .signature-box span,
+      .date-box span {
+        border-bottom: 1px solid rgb(0, 0, 0);
+        padding: 5px 10px;
+      }
+
+      .signature-box span {
+        width: 97.5%; /* Ensure the line spans the full width */
+      }
+
+      .date-box span {
+        width: 92%; /* Ensure the line spans the full width */
+      }
+
+      .checkbox-group {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-top: 10px;
+      }
+
+      .checkbox-group label {
+        margin-right: 50px; /* Adjust as needed */
+      }
+
+      #signature {
+        width: 100%;
+        height: 85%;
+      }
+
+      table {
+        color: gray;
+        font: 0.75em sans-serif;
+        /* border: 1px solid #ccc; */
+      }
+
+      #timetable {
+        padding: 10px;
+        border: 1px solid rgb(209, 209, 209);
+        border-radius: 3px;
+      }
+
+      .officeInfo {
+        max-width: 58%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <h1>{{title}}</h1>
+
+      <h2 class="title">Bulwark Exterminating, LLC</h2>
+      <div class="officeInfo">
+        <p>
+          {{officeStreetAddress}}<br />
+          {{officeCity}}, {{officeState}} {{officeZipCode}}<br />
+          {{officePhone}}<br />
+          {{officeLicense}}
+        </p>
+      </div>
+
+      <h2 class="title">Customer Information</h2>
+      <p>
+        <b>Name</b>: {{customerName}}<br />
+        <b>Address <i>(Treatment Premise)</i></b
+        >: {{customerStreetAddress}}, {{customerCity}}, {{customerState}}
+        {{customerZipCode}}<br />
+        <b>Phone Number</b>: {{customerPhoneNumber}}<br />
+        <b>Email</b>: {{customerEmail}}<br />
+        <b>Billing Name</b>: {{billingName}}<br />
+        <b>Billing Address</b>: {{billingStreetAddress}}, {{billingCity}},
+        {{billingState}} {{billingZipCode}}<br />
+      </p>
+      <h1>Termite Control Plan(s) and Price(s)</h1>
+      <h2 class="title">Termite Protection (Estimate):</h2>
+      <ul>
+        {{termiteProtection}}
+      </ul>
+      <p class="service-cost">
+        <b class="title">Estimated Installation Charge</b>:
+        ${{estimatedInstallationCharge}}
+      </p>
+
+      <div
+        class="header-container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+        "
+      >
+        <h2 class="title">Recurring Termite Services</h2>
+        <h2 class="title" style="font-size: 22px">
+          Amount <i style="font-size: 20px">(To Be Paid)</i>
+        </h2>
+      </div>
+      <ul>
+        {{recurringTermiteService}}
+      </ul>
+      <h2 class="title">Treatment Info</h2>
+      <p>
+        <b>Structure to be Treated</b>: {{structureToBeTreated}}<br />
+        <b>Agreement Length</b>: {{agreementLength}}<br />
+        <b>Payment Type</b>: {{paymentType}}
+      </p>
+      <h1 id="guarantee">Bulwark's Guarantee</h1>
+      <p id="guaranteePar">
+        Bulwark guarantees to shield your home from subterranean termites with
+        the most advanced environmentally friendly methods for the duration of
+        this agreement. If termites return during this guarantee, then Bulwark
+        will return as well to elimate them at no additional cost to you.
+      </p>
+
+      <br />
+      <hr />
+      <br />
+      <p>{{finePrint}}</p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="form-container">
+        <div class="form-section signature-section">
+          <label for="signature"><b>Customer Signature</b>:</label>
+          <div class="signature-box">
+            <span style="color: rgb(150, 9, 9)"
+              >X<img src="{{signature}}" alt="signature" id="signature"
+            /></span>
+          </div>
+        </div>
+
+        <div class="form-section date-section">
+          <label for="date"><b>Today's Date</b>:</label>
+          <div class="date-box">
+            <span>{{signedOn}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkbox-group">
+        <input type="radio" id="owner" name="role" value="owner" checked />
+        <label for="owner">Owner</label>
+        <input type="radio" id="lessee" name="role" value="lessee" {{signee}} />
+        <label for="lessee">Lessee</label>
+        <input type="radio" id="agent" name="role" value="agent" {{signee}} />
+        <label for="agent">Agent</label>
+      </div>
+      <br />
+      <div id="timetable">
+        <p style="color: rgb(160, 160, 160)"><b>FOR BULWARK USE</b></p>
+        <table>
+          <tr>
+            <td>Witness: {{witnessName}}</td>
+          </tr>
+          <tr>
+            <td>Employee ID: {{witnessHrNumber}}</td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Created on {{createdOn}} <i>(UTC)</i></td>
+          </tr>
+          <tr>
+            <td>Opened on {{openedOn}} <i>(UTC)</i></td>
+          </tr>
+          <tr>
+            <td>Signed on {{signedOn}} <i>(UTC)</i></td>
+          </tr>
+          <tr>
+            <td>Submitted on {{submittedOn}} <i>(UTC)</i></td>
+          </tr>
+          <tr>
+            <td>Saved on {{savedOn}} <i>(UTC)</i></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
