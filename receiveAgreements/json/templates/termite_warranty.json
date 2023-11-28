@@ -28,6 +28,8 @@
     },
     "services": 
     {
+        "initialServiceDate": "",
+        "initialServiceTime": "",
         "initialWarrantyExtension": 
         [
             {
