@@ -114,15 +114,38 @@ All times should be in UTC time. The one exception being the `intialServiceDate`
 Please build an API that is able to take in the raw JSON, plug in the informaiton to the corresponding HTML template, and save the filled out HTML as a uneditable PDF.
 
 <details>
-<summary>Examples</summary>
+<summary>Templates</summary>
+
+**General Pest**
+
+- [JSON](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/json/templates/general_pest.json)
+
+- [HTML](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/templates/generalPest.html)
+
+**Termite Control**
+
+- [JSON](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/json/templates/termite_control.json)
+
+- [HTML](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/templates/termiteControl.html)
+
+**Termite Warranty**
+
+- [JSON](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/json/templates/termite_warranty.json)
+
+- [HTML](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/templates/termiteWarranty.html)
+
+</details>
+
+
+
+<details>
+<summary>Filled Out Examples</summary>
 
 **General Pest**
 
 - [JSON](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/json/examples/general_pest.json)
 
-- [HTML Code *(empty)*](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/templates/generalPest.html)
-
-- [HTML Code *(filled)*](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/examples/generalPest.html)
+- [HTML](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/examples/generalPest.html)
 
 - [PDF](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/examples/pdfExamples/generalPest.pdf)
 
@@ -130,9 +153,7 @@ Please build an API that is able to take in the raw JSON, plug in the informaito
 
 - [JSON](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/json/examples/termite_control.json)
 
-- [HTML Code *(empty)*](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/templates/termiteControl.html)
-
-- [HTML Code *(filled)*](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/examples/termiteControl.html)
+- [HTML](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/examples/termiteControl.html)
 
 - [PDF](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/examples/pdfExamples/termiteControl.pdf)
 
@@ -140,13 +161,12 @@ Please build an API that is able to take in the raw JSON, plug in the informaito
 
 - [JSON](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/json/examples/termite_warranty.json)
 
-- [HTML Code _(empty)_](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/templates/termiteWarranty.html)
-
-- [HTML Code _(filled)_](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/examples/termiteWarranty.html)
+- [HTML](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/examples/termiteWarranty.html)
 
 - [PDF](https://github.com/DexterBulwark/VirtualServiceAgreements/blob/main/receiveAgreements/html/examples/pdfExamples/termiteWarranty.pdf)
 
 </details>
+
 
 ### Provide Fine Print ***(do not do this yet)***
 
