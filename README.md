@@ -14,6 +14,17 @@ The majority of fields must be required in the json. The only fields that are no
 **GENERAL PEST**
 - `services->recurring` (would not be needed for One Time Treatments)
 
+<br>
+
+<details>
+<summary>Addition notes on optional fields</summary>
+<br>
+
+
+*Technically any service field could be optional but there will always be an initial service as this would just be the first/only service they receive.*
+
+</details>
+
 ### Service Lists
 All `initial services` and `recurring services` are list and can have any number of items. They will always need to follow the following format:
 
@@ -113,6 +124,7 @@ All times should be in UTC time. The one exception being the `intialServiceDate`
 
 Please build an API that is able to take in the raw JSON, plug in the informaiton to the corresponding HTML template, and save the filled out HTML as a uneditable PDF.
 
+
 <details>
 <summary>Templates</summary>
 
@@ -136,6 +148,7 @@ Please build an API that is able to take in the raw JSON, plug in the informaito
 
 </details>
 
+<br>
 
 
 <details>
