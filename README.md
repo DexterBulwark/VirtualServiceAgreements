@@ -20,8 +20,9 @@ The majority of fields must be required in the json. The only fields that are no
 <summary>Addition notes on optional fields</summary>
 <br>
 
-
 *Technically any service field could be optional but there will always be an initial service as this would just be the first/only service they receive.*
+
+*It should be safe to just build in that if there is any service found in the JSON that it is a valid service agreement and should be saved and processed.*
 
 </details>
 
@@ -117,12 +118,32 @@ All times should be in UTC time. The one exception being the `intialServiceDate`
 "initialServiceTime": "1:00PM - 4:00PM",
 ```
 
+<details>
+<summary>Filled Out JSON Timestamp Section </summary>
+<br>
+
+```json
+"timestamps": 
+{
+    "createdOn": "2023-11-08T22:33:22.358Z",
+    "openedOn": "2023-11-08T22:34:22.358Z",
+    "signedOn": "2023-11-08T22:46:22.358Z",
+    "submittedOn": "2023-11-08T22:46:52.358Z",
+    "savedOn": "2023-11-08T22:46:52.358Z"
+}
+```
+</details>
+
 
 ## API Request
+
+***Both of the APIs should have some level of security,even if it is just basic auth.***
 
 ### Accept Service Agreements ***(do this first)***
 
 Please build an API that is able to take in the raw JSON, plug in the informaiton to the corresponding HTML template, and save the filled out HTML as a uneditable PDF.
+
+This API should be well documented. We would like to be able to provide the documentation to 3rd parties so they can communicate to this API with their own systems. The documentation should include what the API expects to receive, the possible responses that the sender should expect, and any other important information.
 
 
 <details>
@@ -184,6 +205,9 @@ Please build an API that is able to take in the raw JSON, plug in the informaito
 ### Provide Fine Print ***(do not do this yet)***
 
 Create an API that will accept an office id and return all of the fine print for that office among other information. 
+
+This API should be well documented. We would like to be able to provide the documentation to 3rd parties so they can communicate to this API with their own systems. The documentation should include how to call the API, the possible responses that the sender should expect, and any other important information.
+
 
 <details>
 <summary>Examples</summary>
