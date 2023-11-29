@@ -5,7 +5,7 @@ This repository contains examples of the expected JSON to receive for service ag
 ## Rules
 
 ### Optional Fields
-The majority of fields must be required in the json. The only fields that are not required are:
+The majority of fields must be required in the JSON when accepting a service agreement. The only fields that are not required are:
 
 **ALL**
 - `billingInfo` (default to customer info if not provided)
