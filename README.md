@@ -120,6 +120,13 @@ The fine print will be returned like so:
 
 Each number would represent the Id of the fine print content used. 
 
+<details>
+<summary>Note</summary>
+
+The contents can be found in the ServiceAgreementFinePrintContent table. For testing purposes you can use any numbers between 3 and 37 at this time 
+
+</details>
+
 ### Signature
 
 The signature should be recieved as a **base64** encoded image which will be converted on our end and placed into the signature section. 
