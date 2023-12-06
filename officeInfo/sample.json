@@ -1,0 +1,31 @@
+{
+    "baseLanguage": [
+        {
+            "BULWARK PROPERTY": "Blah blah blah..."
+        }
+    ],
+    "officeLanguage": [
+        {
+            "ARBITRATION": "Blah blah blah..."
+        }
+    ],
+    "serviceLanguage": [
+        {
+            "Termite Bait Station 1": [
+                {
+                    "CHEMICAL SENSITIVITY": "Blah blah blah..."
+                },
+                {
+                    "RENEWABLE SUBTERRANEAN TERMITE RETREATMENT GUARANTEE": "Blah blah blah..."
+                }
+            ]
+        },
+        {
+            "Bees": [
+                {
+                    "SERVICE EXCLUSION, WAIVER, AND RELEASE": "Blah blah blah..."
+                }
+            ]
+        }
+    ]
+}

@@ -53,29 +53,13 @@
         "TreatmentType": "Signature Service",
         "paymentType": "CCIS Only"
     },
-    "fineprint": 
+    "finePrint": 
     [
-        {
-            "": "BECAUSE MOST INFESTATIONS START OUTSIDE, BULWARK'S SYSTEM IS DESIGNED TO MAINTAIN A STRONG EXTERIOR BARRIER WHICH IS REINFORCED ON A REGULAR BASIS. SHOULD INSIDE SERVICE BE REQUIRED, PLEASE FEEL FREE TO CONTACT US FOR AN INSIDE VISIT AT NO EXTRA CHARGE. IF SERVICE IS CANCELED PRIOR TO THE LENGTH OF AGREEMENT, THE CUSTOMER AGREES TO PAY ANY DISCOUNTS RECEIVED ON THE INITIAL SERVICE."
-        },
-        {
-            "BULWARK PROPERTY": "Any bait stations, equipment or devices placed or installed at the Customer's property are not owned by the Customer and may be removed by BULWARK at its discretion, at any time, for any reason, including, but not limited to replacement with an alternative treatment method, as a practice of Integrated Pest Management, or upon the termination of this Agreement."
-        },
-        {
-            "Consumer Information Sheet": "bulwarkpestcontrol.com/txconsumerinfo"
-        },
-        {
-            "LATE PAYMENT": "If the customer fails, for any reason to make a monthly payment within 30 days from the due date, Bulwark, at its option may discontinue the service and start collection proceedings. Upon failure to make such payments, the customer agrees to pay all cost of collecting, including a reasonable attorney's fee."
-        },
-        {
-            "SERVICE EXCLUSION, WAIVER AND RELEASE": "I understand that this agreement does not include the control or prevention of wood infesting organisms such as termites, powder post beetles, wood borers, wood wasps, or wood decay fungus. I understand that this agreement does not include the control or prevention of bedbugs. I expressly waive and release Bulwark from liability for any claim for personal injury or damages to the structure or its content caused by wood infesting organisms, fire ants, pharaoh ants, spiders, ticks, wasps, bees or other pests listed in this agreement. I also waive any claims in any lawsuit, arbitration or legal proceeding against Bulwark for (a) loss of use or diminution of value, (b) economic, compensatory, incidental, or consequential damages of any kind, or (c) exemplary or punitive damages."
-        },
-        {
-            "ARBITRATION": "Any dispute arising out of or relating to this agreement or the services performed under this agreement or tort based claims for personal or bodily injury or damage to real or personal property shall be finally resolved by arbitration administered under the Commercial Arbitration rules of the American Arbitration Association. This agreement involves interstate commerce; furthermore, the parties expressly agree that their mutual rights and obligations under the conduct of any arbitration proceeding shall be controlled by the Federal Arbitration Act. The award of the arbitrator shall be final, binding, non-appealable and may be entered and enforced in any court having jurisdiction in accordance with the Federal Arbitration Act. The arbitrator shall not have the power or authority to award exemplary, treble, liquidated or any type of punitive damages."
-        },
-        {
-            "CHEMICAL SENSITIVITY": "Virtually all pesticides have some odor which may be present for a short while after application. If you or any member of your household has a sensitivity to chemical odor or chemicals, Bulwark recommends that you not have your home serviced for pest control until you have consulted your family physician."
-        }
+        "5",
+        "7",
+        "13",
+        "8",
+        "9"   
     ],
     "signature": 
     {

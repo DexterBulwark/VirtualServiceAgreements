@@ -1,0 +1,49 @@
+{
+    "officeId": 8,
+    "officeName": "",
+    "streetAddress": "",
+    "city": "",
+    "state": "",
+    "zip": "",
+    "phoneNumber": "",
+    "licenses": [
+        {
+            "": [
+                {
+                    "generalPest": ""
+                },
+                {
+                    "termite": ""
+                },
+                {
+                    "lawnWeedControl": ""
+                }
+            ]
+        }
+    ],
+    "finePrintContentOrder": [
+        {
+            "": ""
+        }
+    ],
+  "finePrintContent": {
+        "": [
+            {
+                "": ""
+            }
+        ]
+    },
+    "finePrintContentRules": [
+        {
+            "office": "",
+            "stateCode": "",
+            "isBuilder": "",
+            "category": "",
+            "serviceType": "",
+            "include": "",
+            "content": {
+                "Important: Customer Undertand...": ""
+            }
+        }
+    ]
+}

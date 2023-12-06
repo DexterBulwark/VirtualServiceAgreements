@@ -53,11 +53,9 @@
         "TreatmentType": "",
         "paymentType": ""
     },
-    "fineprint": 
+    "finePrint": 
     [
-        {
-            "": ""
-        }
+        ""   
     ],
     "signature": 
     {

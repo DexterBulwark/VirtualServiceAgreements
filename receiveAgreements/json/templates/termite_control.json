@@ -52,11 +52,9 @@
         "agreementLength": "",
         "paymentType": ""
     },
-    "fineprint": 
+    "finePrint": 
     [
-        {
-            "": ""
-        }
+        ""   
     ],
     "signature": 
     {

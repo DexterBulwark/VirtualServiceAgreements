@@ -103,6 +103,23 @@ And should be inserted in the HTML like this:
 ```
 </details>
 
+### Fine Print 
+
+The fine print will be returned like so:
+
+```JSON
+"finePrint":
+    [
+        "5",
+        "7",
+        "13",
+        "8",
+        "9"
+    ],
+```
+
+Each number would represent the Id of the fine print content used. 
+
 ### Signature
 
 The signature should be recieved as a **base64** encoded image which will be converted on our end and placed into the signature section. 
