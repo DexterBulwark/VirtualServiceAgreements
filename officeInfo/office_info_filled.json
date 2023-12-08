@@ -1,0 +1,125 @@
+{
+    "officeId": 7,
+    "officeName": "Saint George",
+    "streetAddress": "56 North 500 East",
+    "city": "Saint George",
+    "state": "UT",
+    "zip": "84770",
+    "phoneNumber": "(435) 627-8840",
+    "licenses": {
+        "UT": {
+            "generalPest": "4000-467",
+            "termite": "4000-467",
+            "lawnAndWeed": "4000-467"
+        },
+        "NV": {
+            "generalPest": "5253",
+            "termite": "5253",
+            "lawnAndWeed": "5253"
+        },
+        "AZ": {
+            "generalPest": "5632",
+            "termite": "5632",
+            "lawnAndWeed": "5632"
+        }
+    },
+    "finePrintContentOrder": [
+        {
+            "2": "Bulwark is hereby authorized..."
+        },
+        {
+            "3": "Important: Customer Understand..."
+        },
+        {
+            "6": "BULWARK PROPERTY"
+        }
+    ],
+    "finePrintContent": {
+        "Bulwark is hereby authorized...": {
+            "4": "BULWARK is hereby authorized to install bait stations in and around Customer's premises on the Installation Date Range listed on this AGREEMENT. Prior to Installation, BULWARK will provide Customer a Subterranean Termite Post-Construction Treatment Estimate / Disclosure Document."
+        },
+        "Important: Customer Understand...": {
+            "5": "IMPORTANT: Customer understands that BULWARK will not be responsible for repairs or replacement of damaged material to any structure situated on Customer's premises or their contents caused by Subterranean Termites or other wood destroying organisms. The term “Service” or “Services” under this Agreement means the bait station program, and Guarantee set forth below. If during the effective period of this Agreement, BULWARK, for whatever reason, changes the type of bait being used or ceases to offer a bait program in Customer's area, an appropriate alternative treatment method, if available, will be determined by and performed by BULWARK at no additional charge to Customer. The bait stations and all components are owned at all times by BULWARK and may be removed at any time by BULWARK at its discretion, (i) for replacement with an alternative treatment method, (ii) upon the termination of this Agreement; or, (iii) if BULWARK ceases to offer a bait program in this Customer's area. BULWARK'S Services under this Agreement are expressly related to Subterranean Termites. Customer expressly waives and releases BULWARK from any and all claims of liability for personal injury and/or property damage resulting from the Services performed, by Bulwark including damages to Customer's home, other structures, or their contents, whether preexisting or after the Services are performed, caused by an infestation of, or damage resulting from Subterranean Termites (including Formosan Termites), Boring Beetles, Wood Decay Fungus or any other Wood Destroying organisms. Customer shall receive the following Retreatment Guarantee after the installation of the bait stations and payment.",
+            "6": "IMPORTANT: Customer understands that BULWARK will not be responsible for repairs or replacement of damaged material to any structure situated on Customer's premises or their contents caused by Subterranean Termites or other wood destroying organisms. The term “Service” or “Services” under this Agreement means the Bulwark Retreatment Guarantee set forth below. BULWARK'S Retreatment Guarantee and Services under this Agreement are expressly related to Subterranean Termites. Customer expressly waives and releases BULWARK from any and all claims of liability for personal injury and/or property damage resulting from the Services performed, by Bulwark including damages to Customer's home, other structures, or their contents, whether preexisting or after the Services are performed, caused by an infestation of, or damage resulting from Subterranean Termites (including Formosan Termites), Boring Beetles, Wood Decay Fungus or any other Wood Destroying organisms. The following Retreatment Guarantee shall be effective upon payment of the above Retreatment Guarantee Fees and/or payment of $1.00 to initiate this AGREEMENT."
+        },
+        "BULWARK PROPERTY": {
+            "14": "Any bait stations, equipment or devices placed or installed at the Customer's property are not owned by the Customer and may be removed by BULWARK at its discretion, at any time, for any reason, including, but not limited to replacement with an alternative treatment method, as a practice of Integrated Pest Management, or upon the termination of this Agreement. Virtually all pesticides have some odor which may be present for a short while after application. If you or any member of your household has a sensitivity to chemical odor or chemicals, Bulwark recommends that you not have your home serviced for pest control until you have consulted your family physician. All technicians are licensed and bonded. You, the customer, may cancel this transaction at any time prior to midnight of the third business day after the date of this transaction."
+        }
+    },
+    "finePrintContentRules": {
+        "Bulwark is hereby authorized...": {
+            "include": {
+                "4": [
+                    {
+                        "office": "Saint George",
+                        "stateCode": "AZ",
+                        "isBuilder": "False",
+                        "category": "General Pest",
+                        "serviceType": "5 Treatment Program",
+                        "include": "True"
+                    },
+                    {
+                        "office": "Saint George",
+                        "stateCode": "UT",
+                        "isBuilder": "True",
+                        "category": "General Pest",
+                        "serviceType": "5 Treatment Program",
+                        "include": "True"
+                    }
+                ]
+            },
+            "exclude": {}
+        },
+        "Important: Customer Understand...": {
+            "include": {
+                "5": [
+                    {
+                        "office": "Saint George",
+                        "stateCode": "AZ",
+                        "isBuilder": "True",
+                        "category": "General Pest",
+                        "serviceType": "5 Treatment Program",
+                        "include": "True"
+                    }
+                ],
+                "6": [
+                    {
+                        "office": "Saint George",
+                        "stateCode": "AZ",
+                        "isBuilder": "False",
+                        "category": "General Pest",
+                        "serviceType": "Gopher Control Additional",
+                        "include": "True"
+                    }
+                ]
+            },
+            "exclude": {}
+        },
+        "BULWARK PROPERTY": {
+            "include": {
+                "14": [
+                    {
+                        "office": "",
+                        "stateCode": "",
+                        "isBuilder": "",
+                        "category": "",
+                        "serviceType": "",
+                        "include": "True"
+                    }
+                ]
+            },
+            "exclude": {
+                "14": [
+                    {
+                        "office": "Saint George",
+                        "stateCode": "",
+                        "isBuilder": "",
+                        "category": "",
+                        "serviceType": "",
+                        "include": "False"
+                    }
+                ]
+            }
+        }
+    }
+}

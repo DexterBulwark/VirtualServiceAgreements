@@ -1,85 +1,54 @@
 {
-    "officeId": 8,
-    "licenses": [
-        {
-            "AZ": [
-                {
-                    "generalPest": "5632"
-                },
-                {
-                    "lawnWeedControl": "5632"
-                },
-                {
-                    "termite": "5632"
-                }
-            ]
+    "officeId": 0,
+    "officeName": "",
+    "streetAddress": "",
+    "city": "",
+    "state": "",
+    "zip": "",
+    "phoneNumber": "",
+    "licenses": {
+        "": {
+            "generalPest": "",
+            "termite": "",
+            "lawnAndWeed": ""
         }
-    ],
-    "officeName": "Mesa",
-    "streetAddress": "1228 E Broadway Rd",
-    "city": "Mesa",
-    "state": "AZ",
-    "zip": "85204",
-    "phoneNumber": "(480) 969-2112",
+    },
     "finePrintContentOrder": [
         {
-            "1": "Bulwark is hereby authorized..."
-        },
-        {
-            "2": "Improtant: Customer Undertand..."
-        },
-        {
-            "3": "Because most infestations start outside..."
+            "": ""
         }
     ],
-  "finePrintContent": {
-        "Bulwark is hereby authorized...": [
-            {
-                "4": "BULWARK is hereby authorized to install bait stations in and around Customer's premises on the Installation Date Range listed on this AGREEMENT. Prior to Installation, BULWARK will provide Customer a Subterranean Termite Post-Construction Treatment Estimate / Disclosure Document."
-            }
-        ],
-        "Important: Customer Undertand...": [
-            {
-                "5": "IMPORTANT: Customer understands that BULWARK will not be responsible for repairs or replacement of damaged material to any structure situated on Customer's premises or their contents caused by Subterranean Termites or other wood destroying organisms. The term “Service” or “Services” under this Agreement means the bait station program, and Guarantee set forth below. If during the effective period of this Agreement, BULWARK, for whatever reason, changes the type of bait being used or ceases to offer a bait program in Customer's area, an appropriate alternative treatment method, if available, will be determined by and performed by BULWARK at no additional charge to Customer. The bait stations and all components are owned at all times by BULWARK and may be removed at any time by BULWARK at its discretion, (i) for replacement with an alternative treatment method, (ii) upon the termination of this Agreement; or, (iii) if BULWARK ceases to offer a bait program in this Customer's area. BULWARK'S Services under this Agreement are expressly related to Subterranean Termites. Customer expressly waives and releases BULWARK from any and all claims of liability for personal injury and/or property damage resulting from the Services performed, by Bulwark including damages to Customer's home, other structures, or their contents, whether preexisting or after the Services are performed, caused by an infestation of, or damage resulting from Subterranean Termites (including Formosan Termites), Boring Beetles, Wood Decay Fungus or any other Wood Destroying organisms. Customer shall receive the following Retreatment Guarantee after the installation of the bait stations and payment."
-            },
-            {
-                "6": "IMPORTANT: Customer understands that BULWARK will not be responsible for repairs or replacement of damaged material to any structure situated on Customer's premises or their contents caused by Subterranean Termites or other wood destroying organisms. The term “Service” or “Services” under this Agreement means the Bulwark Retreatment Guarantee set forth below. BULWARK'S Retreatment Guarantee and Services under this Agreement are expressly related to Subterranean Termites. Customer expressly waives and releases BULWARK from any and all claims of liability for personal injury and/or property damage resulting from the Services performed, by Bulwark including damages to Customer's home, other structures, or their contents, whether preexisting or after the Services are performed, caused by an infestation of, or damage resulting from Subterranean Termites (including Formosan Termites), Boring Beetles, Wood Decay Fungus or any other Wood Destroying organisms. The following Retreatment Guarantee shall be effective upon payment of the above Retreatment Guarantee Fees and/or payment of $1.00 to initiate this AGREEMENT."
-            }
-        ]
+    "finePrintContent": {
+        "": {
+            "": ""
+        }
     },
-    "finePrintContentRules": [
-        {
-            "office": "",
-            "stateCode": "",
-            "isBuilder": "",
-            "category": "",
-            "serviceType": "",
-            "include": "true",
-            "content": {
-                "Bulwark is hereby authorized...": "4"
-            }
-        },
-        {
-            "office": "Mesa",
-            "stateCode": "AZ",
-            "isBuilder": "false",
-            "category": "Termite",
-            "serviceType": "Termite Bait Station 1",
-            "include": "true",
-            "content": {
-                "Important: Customer Undertand...": "6"
-            }
-        },
-        {
-            "office": "Mesa",
-            "stateCode": "AZ",
-            "isBuilder": "false",
-            "category": "Termite",
-            "serviceType": "Termite Bait Station 1",
-            "include": "true",
-            "content": {
-                "Important: Customer Undertand...": "6"
+    "finePrintContentRules": {
+        "": {
+            "include": {
+                "": [
+                    {
+                        "office": "",
+                        "stateCode": "",
+                        "isBuilder": "",
+                        "category": "",
+                        "serviceType": "",
+                        "include": ""
+                    }
+                ]
+            },
+            "exclude": {
+                "": [
+                    {
+                        "office": "",
+                        "stateCode": "",
+                        "isBuilder": "",
+                        "category": "",
+                        "serviceType": "",
+                        "include": ""
+                    }
+                ]
             }
         }
-    ]
+    }
 }
