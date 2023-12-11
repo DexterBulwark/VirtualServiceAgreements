@@ -1,6 +1,6 @@
 # Virtual Service Agreement
 
-This repository contains examples of the expected JSON to receive for service agreements and the HTML that it should be converted to. It also containes examples of how the fine print should be given when requested through an API.
+This repository contains examples of the expected JSON to receive for service agreements and the HTML that it should be converted to. It also contains examples of how the fine print should be given when requested through an API.
 
 ## Rules
 
@@ -9,7 +9,7 @@ The majority of fields must be required in the JSON when accepting a service agr
 
 **ALL**
 - `billingInfo` (default to customer info if not provided)
-- `savedOn` (this should be filled on our end when the json is recieved)
+- `savedOn` (this should be filled on our end when the json is received)
 
 **GENERAL PEST**
 - `services->recurring` (would not be needed for One Time Treatments)
@@ -32,7 +32,7 @@ All `initial services` and `recurring services` are list and can have any number
 
 
 
-**Initial Service** *(Termite Protection, Initial Warranty Extention)*
+**Initial Service** *(Termite Protection, Initial Warranty Extension)*
 ```json
 "initial": [
     {
@@ -129,13 +129,13 @@ The contents can be found in the ServiceAgreementFinePrintContent table. For tes
 
 ### Signature
 
-The signature should be recieved as a **base64** encoded image which will be converted on our end and placed into the signature section. 
+The signature should be received as a **base64** encoded image which will be converted on our end and placed into the signature section. 
 
-The image should be a **3000x500** image (JPG, JPEG, PNG, PDF). The dementions should be maintained for consistency. 
+The image should be a **3000x500** image (JPG, JPEG, PNG, PDF). The dimensions should be maintained for consistency. 
 
 ### Times
 
-All times should be in UTC time. The one exception being the `intialServiceDate` and `intialServiceTime`. These fields should be expected as a string and look like this:
+All times should be in UTC time. The one exception being the `initialServiceDate` and `initialServiceTime`. These fields should be expected as a string and look like this:
 
 ```json
 "initialServiceDate": "Jan 02, 2024",
@@ -165,7 +165,7 @@ All times should be in UTC time. The one exception being the `intialServiceDate`
 
 ### Accept Service Agreements ***(do this first)***
 
-Please build an API that is able to take in the raw JSON, plug in the informaiton to the corresponding HTML template, and save the filled out HTML as a uneditable PDF.
+Please build an API that is able to take in the raw JSON, plug in the information to the corresponding HTML template, and save the filled out HTML as a uneditable PDF.
 
 This API should be well documented. We would like to be able to provide the documentation to 3rd parties so they can communicate to this API with their own systems. The documentation should include what the API expects to receive, the possible responses that the sender should expect, and any other important information.
 
@@ -428,7 +428,7 @@ Empty JSON
 <details>
 <summary>Example API</summary>
 
-Here is an example of a function API that does this. The API is written in Python and should not be used in production. For speed and reliablility we would like for it to be written in PHP. Please reach out to dexterd@bulwarkpest.com if you would like the raw Python code.
+Here is an example of a function API that does this. The API is written in Python and should not be used in production. For speed, reliability, and consistency we would like for it to be written in PHP. Please reach out to dexterd@bulwarkpest.com if you would like the raw Python code.
 
 The API can be used [HERE](https://api-tools.tem-pest.com/v1/requestServiceAgreementsInfo?officeId=7)
 
