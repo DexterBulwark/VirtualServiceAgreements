@@ -35,11 +35,13 @@
         [
             {
                 "name": "Termite Bait Station Installation",
-                "price": 579.00
+                "price": 579.00,
+                "discount": 0.0
             },
             {
                 "name": "Termite Inspection",
-                "price": 0.00
+                "price": 0.00,
+                "discount": 0.0
             }
         ],
         "estimatedInitialTotalCharge": 579.00,
@@ -48,6 +50,7 @@
             {
                 "name": "Termite Bait Station Warranty",
                 "price": 33.00,
+                "discount": 0.0,
                 "frequency": "Monthly"
             }
         ]

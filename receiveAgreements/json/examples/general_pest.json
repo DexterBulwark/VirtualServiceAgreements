@@ -35,11 +35,13 @@
         [
             {
                 "name": "One Time Treatment",
-                "price": 149.00
+                "price": 149.00,
+                "discount": 0.0
             },
             {
                 "name": "Taxes",
-                "price": 12.29
+                "price": 12.29,
+                "discount": 0.0
             }
         ],
         "initialTotalPrice": 161.39,

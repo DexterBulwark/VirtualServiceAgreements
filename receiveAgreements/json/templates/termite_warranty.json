@@ -35,7 +35,8 @@
         [
             {
                 "name": "",
-                "price": 0.0
+                "price": 0.0,
+                "discount": 0.0
             }
         ],
         "initialTotalPrice": 0.0,
@@ -44,6 +45,7 @@
             {
                 "name": "",
                 "price": 0.0,
+                "discount": 0.0,
                 "frequency": ""
             }
         ]

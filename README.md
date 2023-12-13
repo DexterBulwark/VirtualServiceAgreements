@@ -37,7 +37,8 @@ All `initial services` and `recurring services` are list and can have any number
 "initial": [
     {
         "name": "",
-        "price": 0.0
+        "price": 0.0,
+        "discount": 0.0
     }
 ],
 ```
@@ -49,6 +50,7 @@ All `initial services` and `recurring services` are list and can have any number
     {
         "name": "",
         "price": 0.0,
+        "discount": 0.0,
         "frequency": ""
     }
 ],
