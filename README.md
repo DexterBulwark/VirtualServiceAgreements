@@ -2,6 +2,10 @@
 
 This repository contains examples of the expected JSON to receive for service agreements and the HTML that it should be converted to. It also contains examples of how the fine print should be given when requested through an API.
 
+
+[Service Agreement Samples](https://admin.tem-pest.com/serviceAgreements/samples/generalPest.html)
+
+
 ## Rules
 
 ### Optional Fields
