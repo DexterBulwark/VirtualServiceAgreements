@@ -36,9 +36,11 @@
             {
                 "name": "",
                 "price": 0.0,
-                "discount": 0.0            }
+                "discount": 0.0
+            }
         ],
         "estimatedInitialTotalCharge": 0.0,
+        "estimatedInitialServiceDiscount": 0.0,
         "recurringTermiteServices":
         [
             {

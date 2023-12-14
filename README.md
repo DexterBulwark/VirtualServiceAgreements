@@ -60,18 +60,20 @@ And should be inserted in the HTML like this:
 
 **Initial Service**
 ```html
-<li>
-    <span class="service-name">{{serviceName}}</span>
-    <span class="service-cost">${{serviceCost}}</span>
-</li>
+<tr class="service-table-row">
+    <td class="service-table-service">{{serviceName}} <br><span class="service-table-description">{{serviceDescription}}</span></td>
+    <td class="service-table-item">${{servicePrice}}</td>
+    <td class="service-table-item discount-price">${{serviceDiscount}}</td>
+    <td class="service-table-item">${{subtotal}}</td>
+</tr>
 ```
 **Recurring Service**
 ```html
-<li>
-    <span class="service-name">{{serviceName}}</span>
-    <span class="service-cost">${{serviceCost}} <i>({{paymentFrequency}})</i></span>
-</li>
-
+<tr class="service-table-row-no-line">
+    <td class="service-table-service">{{serviceName}}<br><span class="service-table-description">{{serviceDescription}}</span></td>
+    <td class="service-table-item">${{servicePrice}} + tax</td>
+    <td class="service-table-item">{{frequency}}</td>
+</tr>
 ```
 
 <details>

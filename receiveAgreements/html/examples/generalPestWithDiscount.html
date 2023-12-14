@@ -1,356 +1,364 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"
-    />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"/>
     <title>General Pest Service Agreement</title>
-
     <style>
-      body {
-        font-family: "Roboto", sans-serif;
-        background-color: rgb(213, 214, 214);
-        font-size: 16px;
-        line-height: 1.5;
-      }
+        /* Main Contents */
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: rgb(213, 214, 214);
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            background-color: rgb(255, 255, 255);
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+        }
+        .title {
+            color: rgb(116, 17, 46);
+            margin-top: 60px;
+        }
 
-      h1 {
-        font-size: 32px;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-      }
+        /* Information */
+        .office-info, .customer-info{
+            max-width: 58%;
+        }
 
-      h2 {
-        font-size: 24px;
-        margin-top: 40px;
-        margin-bottom: 20px;
-      }
+        /* Service Table */
+        .service-table {
+            width: 100%;
+            color: black;
+            font-size: 16px;
+            border-collapse: collapse;
+        }
+        .service-table-row {
+            border-bottom: 1px solid #ddd;
+        }
 
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
+        .service-table-header {
+            font-weight: bold;
+        }
+        .service-table-header-service, .service-table-service {
+            width: 60%;
+            text-align: left;
+        }
+        .service-table-header-price, .service-table-header-discount, .service-table-header-subtotal {
+            width: 13%;
+            text-align: center;
+        }
+        .service-table-description {
+            font-size: 12px;
+            color: #606060;
+            padding: 0;
+            margin: 0;
+        }
 
-      li {
-        display: flex;
-        justify-content: space-between;
-      }
+        .service-table-frequency {
+            font-size: 12px;
+            color: #606060;
+        }
 
-      .service-name {
-        /* Aligns to the left */
-        text-align: left;
-      }
+        .service-table-item {
+            width: 13%;
+            text-align: center;
+        }
+        .discount-price {
+            color: red
+        }
+        .service-table-total {
+            font-weight: bold;
+        }
+        .taxes {
+            padding-bottom: 20px;
+        }
 
-      .service-cost {
-        /* Aligns to the right */
-        text-align: right;
-      }
 
-      p {
-        margin-bottom: 20px;
-      }
+        /* Guarantee */
+        .guarantee-title {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .guarantee {
+            text-align: center;
+            font-size: 17px;
+        }
 
-      #content {
-        max-width: 1000px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        background-color: rgb(255, 255, 255);
-        padding-top: 10px;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 10px;
-      }
+        /* Fine Print  */
+        .fine-print {
+            margin-bottom: 100px;
+        }
+        .content-no-title {
+            font-weight: bold;
+        }
+        .fine-print-title {
+          margin-top: 0;
+          color:rgb(116, 17, 46);
+        }
 
-      .title {
-        color: rgb(116, 17, 46);
-      }
+        /* Signature Section */
+        .signature-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature-section {
+            flex: 2;
+            margin-right: 10px;
+        }
+        .date-section {
+            flex: 1;
+        }
+        .signature-box, .date-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 150px;
+            border: 1px solid rgb(119, 107, 228);
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+        #signature {
+            width: 100%;
+            height: 100%;
+        }
+        .signature-line, .date-line {
+            width: 100%;
+            border-bottom: 1px solid #000000;
+        }
 
-      #guarantee {
-        color: rgb(116, 17, 46);
-        font-size: 24px;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        text-align: center;
-      }
+        /* Signee */
+        .signee-selection {
+            margin-top: 20px;
+        }
+        .radio-label {
+            margin-right: 20px;
+        }
 
-      #guaranteePar {
-        text-align: center;
-        font-size: 17px;
-      }
-      .form-container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 20px; /* Adds space between the boxes */
-      }
+        /* Timetable */
+        .timetable-section {
+            color:#7e7e7e;
+            padding: 0 20px 20px 20px;
+            border: 1px solid #d6d6d6;
+            border-radius: 5px;
+        }
+        .timetable {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
 
-      .form-section {
-        display: flex;
-        flex-direction: column; /* Stack label and box vertically */
-        margin-bottom: 20px;
-      }
-
-      .signature-section {
-        flex: 3; /* Takes up more space */
-      }
-
-      .date-section {
-        flex: 1; /* Takes up less space */
-      }
-
-      .signature-box,
-      .date-box {
-        border: 1px solid rgb(119, 107, 228);
-        padding: 10px;
-        display: flex;
-        flex-direction: column; /* Stack children vertically */
-        border-radius: 10px;
-        align-items: flex-start; /* Align label to the start */
-        justify-content: flex-end; /* Move signature/date lines to the bottom */
-        height: 150px;
-        margin-top: 5px; /* Spacing between label and box */
-      }
-
-      .signature-box span,
-      .date-box span {
-        border-bottom: 1px solid rgb(0, 0, 0);
-        padding: 5px 10px;
-      }
-
-      .signature-box span {
-        width: 97.5%; /* Ensure the line spans the full width */
-      }
-
-      .date-box span {
-        width: 92%; /* Ensure the line spans the full width */
-      }
-
-      .checkbox-group {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        padding-top: 10px;
-      }
-
-      .checkbox-group label {
-        margin-right: 50px; /* Adjust as needed */
-      }
-
-      #signature {
-        width: 100%;
-        height: 85%;
-      }
-
-      table {
-        color: gray;
-        font: 0.75em sans-serif;
-        /* border: 1px solid #ccc; */
-      }
-
-      #timetable {
-        padding: 10px;
-        border: 1px solid rgb(209, 209, 209);
-        border-radius: 3px;
-      }
-
-      .officeInfo {
-        max-width: 58%;
-      }
+        /* other */
+        h1, h4 {
+            display: flex;
+            justify-content: center;
+        }
+        h3 {
+            padding-top: 20px;
+        }
+        hr {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
     </style>
-  </head>
-  <body>
-    <div id="content">
-      <h1>Service Agreement</h1>
-      <p style="text-align: center">
+</head>
+<body>
+<div class="content">
+    <h1>One Time Treatment</h1>
+    <p style="text-align: center">
         <b>Initial Service</b>: Jan 04, 2024, 1:00PM-4:00PM
-      </p>
-      <h2 class="title">Bulwark Exterminating</h2>
-      <div class="officeInfo">
+    </p>
+    <h2 class="title">Bulwark Exterminating</h2>
+    <div class="office-info">
         <p>
-          209 E Ben White Blvd 116<br />
-          Austin, TX 78704<br />
-          (512) 291-1200<br />
-          LIC #566941; Licensed and regulated by: Texas Department of
-          Agriculture, P.O. Box 12847, Austin, TX 78711-2847, Phone (866)
-          918-4481, Fax (888) 232-2567
+            209 E Ben White Blvd 116<br />
+            Austin, TX 78704<br />
+            (512) 291-1200<br />
+            LIC #566941; Licensed and regulated by: Texas Department of
+            Agriculture, P.O. Box 12847, Austin, TX 78711-2847, Phone (866)
+            918-4481, Fax (888) 232-2567
         </p>
-      </div>
+    </div>
 
-      <h2 class="title">Customer Information</h2>
-      <p>
-        <b>Name</b>: John Doe<br />
-        <b>Address</b>: 1234 Main St, Austin, TX 78704<br />
-        <b>Phone Number</b>: (123) 456-7890<br />
-        <b>Email</b>: john.doe@email.com<br />
-        <b>Billing Name</b>: John Doe<br />
-        <b>Billing Address</b>: 1234 Main St, Austin, TX 78704<br />
-      </p>
-      <h1>Services</h1>
-      <h2 class="title">Initial Service(s)</h2>
-      <ul>
-        <li>
-          <span class="service-name">One Time Treatment</span>
-          <span class="service-cost"><s style="color: red;">$149.00</s> $100.00</span>
-        </li>
-        <li>
-          <span class="service-name">Taxes</span>
-          <span class="service-cost">$12.29 </span>
-        </li>
-      </ul>
-      <p class="service-cost">
-        <b class="title">Initial Service Total</b>: $112.29
-      </p>
+    <h2 class="title">Customer Information</h2>
+    <div class="customer-info">
+        <p>
+            <b>Name</b>: John Doe<br />
+            <b>Address</b>: 1234 Main St, Austin, TX 78704<br />
+            <b>Phone Number</b>: (123) 456-7890<br />
+            <b>Email</b>: john.doe@email.com<br />
+            <b>Billing Name</b>: John Doe<br />
+            <b>Billing Address</b>: 1234 Main St, Austin, TX 78704<br />
+        </p>
+    </div>
+    <h1>Services</h1>
 
-      <h2 class="title">Recurring Service(s)</h2>
-      <ul></ul>
-      <h2 class="title">Treatment Info</h2>
-      <p>
-        <b>Length of Agreement</b>: 60 Days<br />
-        <b>Treatment Type (Primary Service)</b>: Signature Service<br />
-        <b>Payment Type</b>: CCIS Only
-      </p>
-      <h1 id="guarantee">Money Back Guarantee</h1>
-      <p id="guaranteePar">
+    <h2 class="title">Initial Service(s)</h2>
+
+    <table class="service-table">
+        <tr class="service-table-header">
+            <td class="service-table-header-service"></td>
+            <td class="service-table-header-price">Price</td>
+            <td class="service-table-header-discount">Discount</td>
+            <td class="service-table-header-subtotal">Subtotal</td>
+        </tr>
+        <tr class="service-table-row">
+            <td class="service-table-service">One Time Treatment <br><span class="service-table-description">A one time extensive general pest control service</span></td>
+            <td class="service-table-item">$149.00</td>
+            <td class="service-table-item discount-price">$50.00</td>
+            <td class="service-table-item">$99.00</td>
+        </tr>
+        <tr class="service-table-row">
+            <td class="service-table-service">Bee Treatment <br><span class="service-table-description">Removal of bee hive from property</span></td>
+            <td class="service-table-item">$209.00</td>
+            <td class="service-table-item discount-price"></td>
+            <td class="service-table-item"">$209.00</td>
+        </tr>
+        <tr class="service-table-row">
+            <td class="service-table-service taxes">Taxes</td>
+            <td class="service-table-item">$12.29</td>
+            <td class="service-table-item"></td>
+            <td class="service-table-item">$221.29</td>
+        </tr>
+        <tr class="service-table-total">
+            <td class="service-table-total-cost">Total Cost</td>
+            <td class="service-table-item"></td>
+            <td class="service-table-item"></td>
+            <td class="service-table-item">$221.29</td>
+        </tr>
+    </table>
+
+
+
+
+
+    <h2 class="title">Treatment Info</h2>
+    <div class="treatment-info">
+        <p>
+            <b>Length of Agreement</b>: 60 Days<br />
+            <b>Treatment Type (Primary Service)</b>: Signature Service<br />
+            <b>Payment Type</b>: CCIS Only
+        </p>
+    </div>
+
+    <h2 class="title guarantee-title">Money Back Guarantee</h2>
+    <p class="guarantee">
         Bulwark wants you to be 100% satisfied. There are no treatment
         techniques more advanced than our methods. If you are not happy with our
         service, please call us and we will gladly re-service your home free of
         charge. If we are unable to resolve the problem, we'll refund your last
         charge.
-      </p>
+    </p>
 
-      <br />
-      <hr />
-      <br />
-      <p>
-        <b
-          >BECAUSE MOST INFESTATIONS START OUTSIDE, BULWARK'S SYSTEM IS DESIGNED
-          TO MAINTAIN A STRONG EXTERIOR BARRIER WHICH IS REINFORCED ON A REGULAR
-          BASIS. SHOULD INSIDE SERVICE BE REQUIRED, PLEASE FEEL FREE TO CONTACT
-          US FOR AN INSIDE VISIT AT NO EXTRA CHARGE. IF SERVICE IS CANCELED
-          PRIOR TO THE LENGTH OF AGREEMENT, THE CUSTOMER AGREES TO PAY ANY
-          DISCOUNTS RECEIVED ON THE INITIAL SERVICE.</b
-        >
-        <br /><br /><b class="title">BULWARK PROPERTY</b><br /><br />Any bait
-        stations, equipment or devices placed or installed at the Customer's
-        property are not owned by the Customer and may be removed by BULWARK at
-        its discretion, at any time, for any reason, including, but not limited
-        to replacement with an alternative treatment method, as a practice of
-        Integrated Pest Management, or upon the termination of this
-        Agreement.<br /><br /><b class="title">Consumer Information Sheet</b
-        ><br /><br />bulwarkpestcontrol.com/txconsumerinfo<br /><br /><b
-          class="title"
-          >LATE PAYMENT</b
-        ><br /><br />If the customer fails, for any reason to make a monthly
-        payment within 30 days from the due date, Bulwark, at its option may
-        discontinue the service and start collection proceedings. Upon failure
-        to make such payments, the customer agrees to pay all cost of
-        collecting, including a reasonable attorney’s fee.<br /><br /><b
-          class="title"
-          >SERVICE EXCLUSION, WAIVER AND RELEASE</b
-        ><br /><br />I understand that this agreement does not include the
-        control or prevention of wood infesting organisms such as termites,
-        powder post beetles, wood borers, wood wasps, or wood decay fungus. I
-        understand that this agreement does not include the control or
-        prevention of bedbugs. I expressly waive and release Bulwark from
-        liability for any claim for personal injury or damages to the structure
-        or its content caused by wood infesting organisms, fire ants, pharaoh
-        ants, spiders, ticks, wasps, bees or other pests listed in this
-        agreement. I also waive any claims in any lawsuit, arbitration or legal
-        proceeding against Bulwark for (a) loss of use or diminution of value,
-        (b) economic, compensatory, incidental, or consequential damages of any
-        kind, or (c) exemplary or punitive damages.<br /><br /><b class="title"
-          >ARBITRATION</b
-        ><br /><br />Any dispute arising out of or relating to this agreement or
-        the services performed under this agreement or tort based claims for
-        personal or bodily injury or damage to real or personal property shall
-        be finally resolved by arbitration administered under the Commercial
-        Arbitration rules of the American Arbitration Association. This
-        agreement involves interstate commerce; furthermore, the parties
-        expressly agree that their mutual rights and obligations under the
-        conduct of any arbitration proceeding shall be controlled by the Federal
-        Arbitration Act. The award of the arbitrator shall be final, binding,
-        non-appealable and may be entered and enforced in any court having
-        jurisdiction in accordance with the Federal Arbitration Act. The
-        arbitrator shall not have the power or authority to award exemplary,
-        treble, liquidated or any type of punitive damages.<br /><br /><b
-          class="title"
-          >CHEMICAL SENSITIVITY</b
-        ><br /><br />Virtually all pesticides have some odor which may be
-        present for a short while after application. If you or any member of
-        your household has a sensitivity to chemical odor or chemicals, Bulwark
-        recommends that you not have your home serviced for pest control until
-        you have consulted your family physician.
-      </p>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div class="form-container">
-        <div class="form-section signature-section">
-          <label for="signature"><b>Customer Signature</b>:</label>
-          <div class="signature-box">
-            <span style="color: rgb(150, 9, 9)"
-              >X<img
-                src="https://s3.us-west-2.amazonaws.com/assets.bulwarkpest.com/neighborhood/test/john_doe.png"
-                alt="signature"
-                id="signature"
-            /></span>
-          </div>
-        </div>
+    <hr />
 
-        <div class="form-section date-section">
-          <label for="date"><b>Today's Date</b>:</label>
-          <div class="date-box">
-            <span>2023-11-08</span>
-          </div>
-        </div>
-      </div>
+    <div class="fine-print">
 
-      <div class="checkbox-group">
-        <input type="radio" id="owner" name="role" value="owner" checked />
-        <label for="owner">Owner</label>
-        <input type="radio" id="lessee" name="role" value="lessee" />
-        <label for="lessee">Lessee</label>
-        <input type="radio" id="agent" name="role" value="agent" />
-        <label for="agent">Agent</label>
-      </div>
-      <br />
-      <div id="timetable">
-        <p style="color: rgb(160, 160, 160)"><b>FOR BULWARK USE</b></p>
-        <table>
-          <tr>
-            <td>Witness: Dexter Davenport</td>
-          </tr>
-          <tr>
-            <td>Employee ID: 123456</td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Created on 2023-11-08 22:33:22.358 <i>(UTC)</i></td>
-          </tr>
-          <tr>
-            <td>Opened on 2023-11-08 22:34:00.448 <i>(UTC)</i></td>
-          </tr>
-          <tr>
-            <td>Signed on 2023-11-08 22:46:42.110 <i>(UTC)</i></td>
-          </tr>
-          <tr>
-            <td>Submitted on 2023-11-08 22:46:09.075 <i>(UTC)</i></td>
-          </tr>
-          <tr>
-            <td>Saved on 2023-11-08 22:46:20.908 <i>(UTC)</i></td>
-          </tr>
-        </table>
-      </div>
+        <p class="content-no-title">
+            BECAUSE MOST INFESTATIONS START OUTSIDE, BULWARK'S SYSTEM IS DESIGNED TO MAINTAIN A STRONG EXTERIOR BARRIER WHICH IS REINFORCED ON A REGULAR BASIS. SHOULD INSIDE SERVICE BE REQUIRED, PLEASE FEEL FREE TO CONTACT US FOR AN INSIDE VISIT AT NO EXTRA CHARGE. IF SERVICE IS CANCELED PRIOR TO THE LENGTH OF AGREEMENT, THE CUSTOMER AGREES TO PAY ANY DISCOUNTS RECEIVED ON THE INITIAL SERVICE.
+        </p>
+
+        <h3 class="fine-print-title">BULWARK PROPERTY</h3>
+        <p>
+            Any bait stations, equipment or devices placed or installed at the Customer's property are not owned by the Customer and may be removed by BULWARK at its discretion, at any time, for any reason, including, but not limited to replacement with an alternative treatment method, as a practice of Integrated Pest Management, or upon the termination of this Agreement.
+        </p>
+
+        <h3 class="fine-print-title">LATE PAYMENT</h3>
+        <p>
+            If the customer fails, for any reason to make a monthly payment within 30 days from the due date, Bulwark, at its option may discontinue the service and start collection proceedings. Upon failure to make such payments, the customer agrees to pay all costs of collecting, including a reasonable attorney's fee.
+        </p>
+
+        <h3 class="fine-print-title">SERVICE EXCLUSION, WAIVER, AND RELEASE</h3>
+        <p>
+            I understand that this agreement does not include the control or prevention of wood infesting organisms such as termites, powder post beetles, wood borers, wood wasps, or wood decay fungus. I understand that this agreement does not include the control or prevention of bedbugs. I expressly waive and release Bulwark from liability for any claim for personal injury or damages to the structure or its content caused by wood infesting organisms, fire ants, pharaoh ants, spiders, ticks, wasps, bees or other pests listed in this agreement. I also waive any claims in any lawsuit, arbitration or legal proceeding against Bulwark for (a) loss of use or diminution of value, (b) economic, compensatory, incidental, or consequential damages of any kind, or (c) exemplary or punitive damages.
+        </p>
+
+        <h3 class="fine-print-title">ARBITRATION</h3>
+        <p>
+            Any dispute arising out of or relating to this agreement or the services performed under this agreement or tort based claims for personal or bodily injury or damage to real or personal property shall be finally resolved by arbitration administered under the Commercial Arbitration rules of the American Arbitration Association. This agreement involves interstate commerce; furthermore, the parties expressly agree that their mutual rights and obligations under the conduct of any arbitration proceeding shall be controlled by the Federal Arbitration Act. The award of the arbitrator shall be final, binding, non-appealable and may be entered and enforced in any court having jurisdiction in accordance with the Federal Arbitration Act. The arbitrator shall not have the power or authority to award exemplary, treble, liquidated or any type of punitive damages.
+        </p>
+
+        <h3 class="fine-print-title">CHEMICAL SENSITIVITY</h3>
+        <p>
+            Virtually all pesticides have some odor which may be present for a short while after application. If you or any member of your household has a sensitivity to chemical odor or chemicals, Bulwark recommends that you not have your home serviced for pest control until you have consulted your family physician.
+        </p>
+
+        <h3 class="fine-print-title">Consumer Information Sheet</h3>
+        <p>
+            bulwarkpestcontrol.com/txconsumerinfo
+        </p>
+
     </div>
-  </body>
+
+
+    <div class="signature-container">
+        <div class="signature-section">
+            <label for="signature"><b>Customer Signature</b>:</label>
+            <div class="signature-box">
+                <span class="signature-line"><img
+                        src="https://s3.us-west-2.amazonaws.com/assets.bulwarkpest.com/neighborhood/test/john_doe.png"
+                        alt="signature"
+                        id="signature"
+                /></span>
+            </div>
+        </div>
+
+        <div class="date-section">
+            <label for="date"><b>Today's Date</b>:</label>
+            <div class="date-box">
+                <span class="date-line" id="date">2023-11-08</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="signee-selection">
+        <input type="radio" id="owner" name="role" value="owner" checked />
+        <label for="owner" class="radio-label">Owner</label>
+        <input type="radio" id="lessee" name="role" value="lessee" />
+        <label for="lessee" class="radio-label">Lessee</label>
+        <input type="radio" id="agent" name="role" value="agent" />
+        <label for="agent" class="radio-label">Agent</label>
+    </div>
+    <br />
+    <div class="timetable-section">
+        <h4>FOR BULWARK USE</h4>
+        <table class="timetable">
+            <tr>
+                <td>Witness: Dexter Davenport</td>
+            </tr>
+            <tr>
+                <td>Employee ID: 123456</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Created on 2023-11-08 22:33:22.358 <i>(UTC)</i></td>
+            </tr>
+            <tr>
+                <td>Opened on 2023-11-08 22:34:00.448 <i>(UTC)</i></td>
+            </tr>
+            <tr>
+                <td>Signed on 2023-11-08 22:46:42.110 <i>(UTC)</i></td>
+            </tr>
+            <tr>
+                <td>Submitted on 2023-11-08 22:46:09.075 <i>(UTC)</i></td>
+            </tr>
+            <tr>
+                <td>Saved on 2023-11-08 22:46:20.908 <i>(UTC)</i></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
 </html>

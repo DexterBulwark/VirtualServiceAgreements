@@ -1,302 +1,338 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"
-    />
-
-    <title>Termite Control Service Agreement</title>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"/>
+    <title>General Pest Service Agreement</title>
     <style>
-      body {
-        font-family: "Roboto", sans-serif;
-        background-color: rgb(213, 214, 214);
-        font-size: 16px;
-        line-height: 1.5;
-      }
+        /* Main Contents */
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: rgb(213, 214, 214);
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            background-color: rgb(255, 255, 255);
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+        }
+        .title {
+            color: rgb(116, 17, 46);
+            margin-top: 60px;
+        }
 
-      h1 {
-        font-size: 32px;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-      }
+        /* Information */
+        .office-info, .customer-info{
+            max-width: 58%;
+        }
 
-      h2 {
-        font-size: 24px;
-        margin-top: 40px;
-        margin-bottom: 20px;
-      }
+        /* Service Table */
+        .service-table {
+            width: 100%;
+            color: black;
+            font-size: 16px;
+            border-collapse: collapse;
+        }
+        .service-table-row {
+            border-bottom: 1px solid #ddd;
+        }
 
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
+        .service-table-header {
+            font-weight: bold;
+        }
+        .service-table-header-service, .service-table-service {
+            width: 60%;
+            text-align: left;
+        }
+        .service-table-header-price, .service-table-header-discount, .service-table-header-subtotal {
+            width: 13%;
+            text-align: center;
+        }
+        .service-table-description {
+            font-size: 12px;
+            color: #606060;
+            padding: 0;
+            margin: 0;
+        }
 
-      li {
-        display: flex;
-        justify-content: space-between;
-      }
+        .service-table-frequency {
+            font-size: 12px;
+            color: #606060;
+        }
 
-      .service-name {
-        /* Aligns to the left */
-        text-align: left;
-      }
+        .service-table-item {
+            width: 13%;
+            text-align: center;
+        }
+        .discount-price {
+            color: red
+        }
+        .service-table-total {
+            font-weight: bold;
+        }
+        .taxes {
+            padding-bottom: 20px;
+        }
 
-      .service-cost {
-        /* Aligns to the right */
-        text-align: right;
-      }
 
-      p {
-        margin-bottom: 20px;
-      }
+        /* Guarantee */
+        .guarantee-title {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .guarantee {
+            text-align: center;
+            font-size: 17px;
+        }
 
-      #content {
-        max-width: 1000px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        background-color: rgb(255, 255, 255);
-        padding-top: 10px;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 10px;
-      }
+        /* Fine Print  */
+        .fine-print {
+            margin-bottom: 100px;
+        }
+        .content-no-title {
+            font-weight: bold;
+        }
+        .fine-print-title {
+            margin-top: 0;
+            color:rgb(116, 17, 46);
+        }
 
-      .title {
-        color: rgb(116, 17, 46);
-      }
+        /* Signature Section */
+        .signature-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature-section {
+            flex: 2;
+            margin-right: 10px;
+        }
+        .date-section {
+            flex: 1;
+        }
+        .signature-box, .date-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 150px;
+            border: 1px solid rgb(119, 107, 228);
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+        #signature {
+            width: 100%;
+            height: 100%;
+        }
+        .signature-line, .date-line {
+            width: 100%;
+            border-bottom: 1px solid #000000;
+        }
 
-      #guarantee {
-        color: rgb(116, 17, 46);
-        font-size: 24px;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        text-align: center;
-      }
+        /* Signee */
+        .signee-selection {
+            margin-top: 20px;
+        }
+        .radio-label {
+            margin-right: 20px;
+        }
 
-      #guaranteePar {
-        text-align: center;
-        font-size: 17px;
-      }
-      .form-container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 20px; /* Adds space between the boxes */
-      }
+        /* Timetable */
+        .timetable-section {
+            color:#7e7e7e;
+            padding: 0 20px 20px 20px;
+            border: 1px solid #d6d6d6;
+            border-radius: 5px;
+        }
+        .timetable {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
 
-      .form-section {
-        display: flex;
-        flex-direction: column; /* Stack label and box vertically */
-        margin-bottom: 20px;
-      }
-
-      .signature-section {
-        flex: 3; /* Takes up more space */
-      }
-
-      .date-section {
-        flex: 1; /* Takes up less space */
-      }
-
-      .signature-box,
-      .date-box {
-        border: 1px solid rgb(119, 107, 228);
-        padding: 10px;
-        display: flex;
-        flex-direction: column; /* Stack children vertically */
-        border-radius: 10px;
-        align-items: flex-start; /* Align label to the start */
-        justify-content: flex-end; /* Move signature/date lines to the bottom */
-        height: 150px;
-        margin-top: 5px; /* Spacing between label and box */
-      }
-
-      .signature-box span,
-      .date-box span {
-        border-bottom: 1px solid rgb(0, 0, 0);
-        padding: 5px 10px;
-      }
-
-      .signature-box span {
-        width: 97.5%; /* Ensure the line spans the full width */
-      }
-
-      .date-box span {
-        width: 92%; /* Ensure the line spans the full width */
-      }
-
-      .checkbox-group {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        padding-top: 10px;
-      }
-
-      .checkbox-group label {
-        margin-right: 50px; /* Adjust as needed */
-      }
-
-      #signature {
-        width: 100%;
-        height: 85%;
-      }
-
-      table {
-        color: gray;
-        font: 0.75em sans-serif;
-        /* border: 1px solid #ccc; */
-      }
-
-      #timetable {
-        padding: 10px;
-        border: 1px solid rgb(209, 209, 209);
-        border-radius: 3px;
-      }
-
-      .officeInfo {
-        max-width: 58%;
-      }
+        /* other */
+        h1, h4 {
+            display: flex;
+            justify-content: center;
+        }
+        h3 {
+            padding-top: 20px;
+        }
+        hr {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
     </style>
-  </head>
-  <body>
-    <div id="content">
-      <h1>{{title}}</h1>
-      <p style="text-align: center">
-        <b>Inital Service</b>: {{initialServiceDate}}, {{initialServiceTime}}
-      </p>
-      <h2 class="title">Bulwark Exterminating, LLC</h2>
-      <div class="officeInfo">
+</head>
+<body>
+<div class="content">
+    <h1>{{title}}</h1>
+    <p style="text-align: center">
+        <b>Initial Service</b>: {{serviceDate}}, {{serviceTime}}
+    </p>
+    <h2 class="title">Bulwark Exterminating</h2>
+    <div class="office-info">
         <p>
-          {{officeStreetAddress}}<br />
-          {{officeCity}}, {{officeState}} {{officeZipCode}}<br />
-          {{officePhone}}<br />
-          {{officeLicense}}
+            {{officeStreetAddress}}<br />
+            {{officeCity}}, {{officeState}} {{officeZip}}<br />
+            {{officePhone}}<br />
+            {{license}}
         </p>
-      </div>
+    </div>
 
-      <h2 class="title">Customer Information</h2>
-      <p>
-        <b>Name</b>: {{customerName}}<br />
-        <b>Address <i>(Treatment Premise)</i></b
-        >: {{customerStreetAddress}}, {{customerCity}}, {{customerState}}
-        {{customerZipCode}}<br />
-        <b>Phone Number</b>: {{customerPhoneNumber}}<br />
-        <b>Email</b>: {{customerEmail}}<br />
-        <b>Billing Name</b>: {{billingName}}<br />
-        <b>Billing Address</b>: {{billingStreetAddress}}, {{billingCity}},
-        {{billingState}} {{billingZipCode}}<br />
-      </p>
-      <h1>Termite Control Plan(s) and Price(s)</h1>
-      <h2 class="title">Termite Protection (Estimate):</h2>
-      <ul>
-        {{termiteProtection}}
-      </ul>
-      <p class="service-cost">
-        <b class="title">Estimated Installation Charge</b>:
-        ${{estimatedInstallationCharge}}
-      </p>
+    <h2 class="title">Customer Information</h2>
+    <div class="customer-info">
+        <p>
+            <b>Name</b>: {{customerName}}<br />
+            <b>Address</b>: {{customerStreetAddress}}, {{customerCity}}, {{customerState}} {{customerZip}}<br />
+            <b>Phone Number</b>: {{customerPhone}}<br />
+            <b>Email</b>: {{customerEmail}}<br />
+            <b>Billing Name</b>: {{billingName}}<br />
+            <b>Billing Address</b>: {{billingStreetAddress}}, {{billingCity}}, {{billingState}} {{billingZip}}<br />
+        </p>
+    </div>
+    <h1>Termite Control Plan(s) and Price(s)</h1>
 
-      <div
-        class="header-container"
-        style="
-          display: flex;
-          justify-content: space-between;
-          align-items: baseline;
-        "
-      >
-        <h2 class="title">Recurring Termite Services</h2>
-        <h2 class="title" style="font-size: 22px">
-          Amount <i style="font-size: 20px">(To Be Paid)</i>
-        </h2>
-      </div>
-      <ul>
-        {{recurringTermiteService}}
-      </ul>
-      <h2 class="title">Treatment Info</h2>
-      <p>
-        <b>Structure to be Treated</b>: {{structureToBeTreated}}<br />
-        <b>Agreement Length</b>: {{agreementLength}}<br />
-        <b>Payment Type</b>: {{paymentType}}
-      </p>
-      <h1 id="guarantee">Bulwark's Guarantee</h1>
-      <p id="guaranteePar">
-        Bulwark guarantees to shield your home from subterranean termites with
-        the most advanced environmentally friendly methods for the duration of
-        this agreement. If termites return during this guarantee, then Bulwark
-        will return as well to elimate them at no additional cost to you.
-      </p>
+    <h2 class="title">Termite Protection (Estimate)</h2>
 
-      <br />
-      <hr />
-      <br />
-      <p>{{finePrint}}</p>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div class="form-container">
-        <div class="form-section signature-section">
+    <table class="service-table">
+        <tr class="service-table-header">
+            <td class="service-table-header-service"></td>
+            <td class="service-table-header-price">Price</td>
+            <td class="service-table-header-discount">Discount</td>
+            <td class="service-table-header-subtotal">Subtotal</td>
+        </tr>
+
+        <tr class="service-table-row">
+            <td class="service-table-service">{{serviceName}} <br><span class="service-table-description">{{serviceDescription}}</span></td>
+            <td class="service-table-item">${{servicePrice}}</td>
+            <td class="service-table-item discount-price">${{serviceDiscount}}</td>
+            <td class="service-table-item"">${{serviceSubtotal}}</td>
+        </tr>
+        <tr class="service-table-row">
+            <td class="service-table-service taxes">Taxes</td>
+            <td class="service-table-item">${{tax}}</td>
+            <td class="service-table-item"></td>
+            <td class="service-table-item">${{serviceSubtotal}}</td>
+        </tr>
+        <tr class="service-table-total">
+            <td class="service-table-total-cost">Total Cost</td>
+            <td class="service-table-item"></td>
+            <td class="service-table-item"></td>
+            <td class="service-table-item">${{estimatedInitialTotalCharge}}</td>
+        </tr>
+    </table>
+
+
+
+    <h2 class="title">Recurring Termite Services</h2>
+
+    <table class="service-table">
+        <tr class="service-table-header">
+            <td class="service-table-header-service"></td>
+            <td class="service-table-header-price">Price</td>
+            <td class="service-table-header-discount">Frequency</td>
+        </tr>
+        <tr class="service-table-row-no-line">
+            <td class="service-table-service">{{serviceName}}<br><span class="service-table-description">{{serviceDescription}}</span></td>
+            <td class="service-table-item">${{servicePrice}} + tax</td>
+            <td class="service-table-item">{{serviceFrequency}}</td>
+        </tr>
+
+    </table>
+
+
+
+
+    <h2 class="title">Treatment Info</h2>
+    <div class="treatment-info">
+        <p>
+            <b>Structure to be Treated</b>: {{structureToBeTreated}}<br />
+            <b>Agreement Length</b>: {{agreementLength}}<br />
+            <b>Payment Type</b>: {{paymentType}}
+        </p>
+    </div>
+
+    <h2 class="title guarantee-title">Bulwark's Guarantee</h2>
+    <p class="guarantee">
+        Bulwark guarantees to shield your home from subterranean termites with the most advanced environmentally friendly methods for the duration of this agreement. If termites return during this guarantee, then Bulwark will return as well to eliminate them at no additional cost to you.
+    </p>
+
+    <hr />
+
+    <div class="fine-print">
+
+        {{finePrint}}
+
+    </div>
+
+
+    <div class="signature-container">
+      <div class="signature-section">
           <label for="signature"><b>Customer Signature</b>:</label>
           <div class="signature-box">
-            <span style="color: rgb(150, 9, 9)"
-              >X<img src="{{signature}}" alt="signature" id="signature"
-            /></span>
+              <span class="signature-line"><img
+                      src="{{signature}}"
+                      alt="signature"
+                      id="signature"
+              /></span>
           </div>
-        </div>
+      </div>
 
-        <div class="form-section date-section">
+      <div class="date-section">
           <label for="date"><b>Today's Date</b>:</label>
           <div class="date-box">
-            <span>{{signedOn}}</span>
+              <span class="date-line" id="date">{{signedOn}}</span>
           </div>
-        </div>
       </div>
+  </div>
 
-      <div class="checkbox-group">
-        <input type="radio" id="owner" name="role" value="owner" checked />
-        <label for="owner">Owner</label>
-        <input type="radio" id="lessee" name="role" value="lessee" {{signee}} />
-        <label for="lessee">Lessee</label>
-        <input type="radio" id="agent" name="role" value="agent" {{signee}} />
-        <label for="agent">Agent</label>
-      </div>
-      <br />
-      <div id="timetable">
-        <p style="color: rgb(160, 160, 160)"><b>FOR BULWARK USE</b></p>
-        <table>
+  <div class="signee-selection">
+      <input type="radio" id="owner" name="role" value="owner" checked />
+      <label for="owner" class="radio-label">Owner</label>
+      <input type="radio" id="lessee" name="role" value="lessee" {{signee}} />
+      <label for="lessee" class="radio-label">Lessee</label>
+      <input type="radio" id="agent" name="role" value="agent" {{signee}} />
+      <label for="agent" class="radio-label">Agent</label>
+  </div>
+  <br />
+  <div class="timetable-section">
+      <h4>FOR BULWARK USE</h4>
+      <table class="timetable">
           <tr>
-            <td>Witness: {{witnessName}}</td>
+              <td>Witness: {{witnessName}}</td>
           </tr>
           <tr>
-            <td>Employee ID: {{witnessHrNumber}}</td>
+              <td>Employee ID: {{witnessHrNumber}}</td>
           </tr>
           <tr>
-            <td></td>
+              <td></td>
           </tr>
           <tr>
-            <td>Created on {{createdOn}} <i>(UTC)</i></td>
+              <td>Created on {{createdOn}} <i>(UTC)</i></td>
           </tr>
           <tr>
-            <td>Opened on {{openedOn}} <i>(UTC)</i></td>
+              <td>Opened on {{openedOn}} <i>(UTC)</i></td>
           </tr>
           <tr>
-            <td>Signed on {{signedOn}} <i>(UTC)</i></td>
+              <td>Signed on {{signedOn}} <i>(UTC)</i></td>
           </tr>
           <tr>
-            <td>Submitted on {{submittedOn}} <i>(UTC)</i></td>
+              <td>Submitted on {{submittedOn}} <i>(UTC)</i></td>
           </tr>
           <tr>
-            <td>Saved on {{savedOn}} <i>(UTC)</i></td>
+              <td>Saved on {{savedOn}} <i>(UTC)</i></td>
           </tr>
-        </table>
-      </div>
-    </div>
-  </body>
+      </table>
+  </div>
+</div>
+</body>
 </html>

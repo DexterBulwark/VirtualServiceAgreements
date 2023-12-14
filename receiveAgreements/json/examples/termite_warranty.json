@@ -35,7 +35,8 @@
         [
             {
                 "name": "Initial Service - Termite Bait Station Formosan 1",
-                "price": 99.00
+                "price": 99.00,
+                "discount": 0.0
             }
         ],
         "initialTotalPrice": 99.00,
@@ -44,6 +45,7 @@
             {
                 "name": "Termite Bait Station Formosan 1",
                 "price": 39.00,
+                "discount": 0.0,
                 "frequency": "Monthly"
             }
         ]

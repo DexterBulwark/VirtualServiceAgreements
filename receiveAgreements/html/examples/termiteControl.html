@@ -1,474 +1,402 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"
-    />
-
-    <title>Termite Control Service Agreement</title>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"/>
+    <title>General Pest Service Agreement</title>
     <style>
-      body {
-        font-family: "Roboto", sans-serif;
-        background-color: rgb(213, 214, 214);
-        font-size: 16px;
-        line-height: 1.5;
-      }
+        /* Main Contents */
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: rgb(213, 214, 214);
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            background-color: rgb(255, 255, 255);
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+        }
+        .title {
+            color: rgb(116, 17, 46);
+            margin-top: 60px;
+        }
 
-      h1 {
-        font-size: 32px;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-      }
+        /* Information */
+        .office-info, .customer-info{
+            max-width: 58%;
+        }
 
-      h2 {
-        font-size: 24px;
-        margin-top: 40px;
-        margin-bottom: 20px;
-      }
+        /* Service Table */
+        .service-table {
+            width: 100%;
+            color: black;
+            font-size: 16px;
+            border-collapse: collapse;
+        }
+        .service-table-row {
+            border-bottom: 1px solid #ddd;
+        }
 
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
+        .service-table-header {
+            font-weight: bold;
+        }
+        .service-table-header-service, .service-table-service {
+            width: 60%;
+            text-align: left;
+        }
+        .service-table-header-price, .service-table-header-discount, .service-table-header-subtotal {
+            width: 13%;
+            text-align: center;
+        }
+        .service-table-description {
+            font-size: 12px;
+            color: #606060;
+            padding: 0;
+            margin: 0;
+        }
 
-      li {
-        display: flex;
-        justify-content: space-between;
-      }
+        .service-table-frequency {
+            font-size: 12px;
+            color: #606060;
+        }
 
-      .service-name {
-        /* Aligns to the left */
-        text-align: left;
-      }
+        .service-table-item {
+            width: 13%;
+            text-align: center;
+        }
+        .discount-price {
+            color: red
+        }
+        .service-table-total {
+            font-weight: bold;
+        }
+        .taxes {
+            padding-bottom: 20px;
+        }
 
-      .service-cost {
-        /* Aligns to the right */
-        text-align: right;
-      }
 
-      p {
-        margin-bottom: 20px;
-      }
+        /* Guarantee */
+        .guarantee-title {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .guarantee {
+            text-align: center;
+            font-size: 17px;
+        }
 
-      #content {
-        max-width: 1000px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        background-color: rgb(255, 255, 255);
-        padding-top: 10px;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 10px;
-      }
+        /* Fine Print  */
+        .fine-print {
+            margin-bottom: 100px;
+        }
+        .content-no-title {
+            font-weight: bold;
+        }
+        .fine-print-title {
+          margin-top: 0;
+          color:rgb(116, 17, 46);
+        }
 
-      .title {
-        color: rgb(116, 17, 46);
-      }
+        /* Signature Section */
+        .signature-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature-section {
+            flex: 2;
+            margin-right: 10px;
+        }
+        .date-section {
+            flex: 1;
+        }
+        .signature-box, .date-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 150px;
+            border: 1px solid rgb(119, 107, 228);
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+        #signature {
+            width: 100%;
+            height: 100%;
+        }
+        .signature-line, .date-line {
+            width: 100%;
+            border-bottom: 1px solid #000000;
+        }
 
-      #guarantee {
-        color: rgb(116, 17, 46);
-        font-size: 24px;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        text-align: center;
-      }
+        /* Signee */
+        .signee-selection {
+            margin-top: 20px;
+        }
+        .radio-label {
+            margin-right: 20px;
+        }
 
-      #guaranteePar {
-        text-align: center;
-        font-size: 17px;
-      }
-      .form-container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 20px; /* Adds space between the boxes */
-      }
+        /* Timetable */
+        .timetable-section {
+            color:#7e7e7e;
+            padding: 0 20px 20px 20px;
+            border: 1px solid #d6d6d6;
+            border-radius: 5px;
+        }
+        .timetable {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
 
-      .form-section {
-        display: flex;
-        flex-direction: column; /* Stack label and box vertically */
-        margin-bottom: 20px;
-      }
-
-      .signature-section {
-        flex: 3; /* Takes up more space */
-      }
-
-      .date-section {
-        flex: 1; /* Takes up less space */
-      }
-
-      .signature-box,
-      .date-box {
-        border: 1px solid rgb(119, 107, 228);
-        padding: 10px;
-        display: flex;
-        flex-direction: column; /* Stack children vertically */
-        border-radius: 10px;
-        align-items: flex-start; /* Align label to the start */
-        justify-content: flex-end; /* Move signature/date lines to the bottom */
-        height: 150px;
-        margin-top: 5px; /* Spacing between label and box */
-      }
-
-      .signature-box span,
-      .date-box span {
-        border-bottom: 1px solid rgb(0, 0, 0);
-        padding: 5px 10px;
-      }
-
-      .signature-box span {
-        width: 97.5%; /* Ensure the line spans the full width */
-      }
-
-      .date-box span {
-        width: 92%; /* Ensure the line spans the full width */
-      }
-
-      .checkbox-group {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        padding-top: 10px;
-      }
-
-      .checkbox-group label {
-        margin-right: 50px; /* Adjust as needed */
-      }
-
-      #signature {
-        width: 100%;
-        height: 85%;
-      }
-
-      table {
-        color: gray;
-        font: 0.75em sans-serif;
-        /* border: 1px solid #ccc; */
-      }
-
-      #timetable {
-        padding: 10px;
-        border: 1px solid rgb(209, 209, 209);
-        border-radius: 3px;
-      }
-
-      .officeInfo {
-        max-width: 58%;
-      }
+        /* other */
+        h1, h4 {
+            display: flex;
+            justify-content: center;
+        }
+        h3 {
+            padding-top: 20px;
+        }
+        hr {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
     </style>
-  </head>
-  <body>
-    <div id="content">
-      <h1 style="text-align: center">
-        Trelona&trade; ATBS BAITING PROTECTION PLAN<br />
-        Subterranean Termite Retreatment Agreement
-      </h1>
-      <p style="text-align: center">
-        <b>Inital Service</b>: Jan 04, 2024, 1:00PM-4:00PM
-      </p>
-      <h2 class="title">Bulwark Exterminating</h2>
-      <div class="officeInfo">
+</head>
+<body>
+<div class="content">
+    <h1>Trelona™ ATBS BAITING PROTECTION PLAN
+        Subterranean Termite Retreatment Agreement</h1>
+    <p style="text-align: center">
+        <b>Initial Service</b>: Jan 04, 2024, 1:00PM-4:00PM
+    </p>
+    <h2 class="title">Bulwark Exterminating</h2>
+    <div class="office-info">
         <p>
-          209 E Ben White Blvd 116<br />
-          Austin, TX 78704<br />
-          (512) 291-1200<br />
-          LIC #566941; Licensed and regulated by: Texas Department of
-          Agriculture, P.O. Box 12847, Austin, TX 78711-2847, Phone (866)
-          918-4481, Fax (888) 232-2567
+            209 E Ben White Blvd 116<br />
+            Austin, TX 78704<br />
+            (512) 291-1200<br />
+            LIC #566941; Licensed and regulated by: Texas Department of
+            Agriculture, P.O. Box 12847, Austin, TX 78711-2847, Phone (866)
+            918-4481, Fax (888) 232-2567
         </p>
-      </div>
-
-      <h2 class="title">Customer Information</h2>
-      <p>
-        <b>Name</b>: John Doe<br />
-        <b>Address</b>: 1234 Main St, Austin, TX 78704<br />
-        <b>Phone Number</b>: (123) 456-7890<br />
-        <b>Email</b>: john.doe@email.com<br />
-        <b>Billing Name</b>: John Doe<br />
-        <b>Billing Address</b>: 1234 Main St, Austin, TX 78704<br />
-      </p>
-      <h1>Termite Control Plan(s) and Price(s)</h1>
-      <h2 class="title">Termite Protection (Estimate):</h2>
-      <ul>
-        <li>
-          <span class="service-name">Termite Bait Station Installation</span>
-          <span class="service-cost">$579.00 </span>
-        </li>
-        <li>
-          <span class="service-name">Termite Inspection</span>
-          <span class="service-cost">$0.00 </span>
-        </li>
-      </ul>
-      <p class="service-cost">
-        <b class="title">Estimated Installation Charge</b>: $579.00
-      </p>
-
-      <div
-        class="header-container"
-        style="
-          display: flex;
-          justify-content: space-between;
-          align-items: baseline;
-        "
-      >
-        <h2 class="title">Recurring Termite Services</h2>
-        <h2 class="title" style="font-size: 22px">
-          Amount <i style="font-size: 20px">(To Be Paid)</i>
-        </h2>
-      </div>
-      <ul>
-        <li>
-          <span class="service-name">Termite Bait Station Warranty</span>
-          <span class="service-cost">$33.00 <i>(Monthly)</i> </span>
-        </li>
-      </ul>
-      <h2 class="title">Treatment Info</h2>
-      <p>
-        <b>Structure to be Treated</b>: Residential, 0<br />
-        <b>Agreement Length</b>: Ongoing<br />
-        <b>Payment Type</b>: PIF
-      </p>
-      <h1 id="guarantee">Bulwark's Guarantee</h1>
-      <p id="guaranteePar">
-        Bulwark guarantees to shield your home from subterranean termites with
-        the most advanced environmentally friendly methods for the duration of
-        this agreement. If termites return during this guarantee, then Bulwark
-        will return as well to elimate them at no additional cost to you.
-      </p>
-
-      <br />
-      <hr />
-      <br />
-      <p>
-        <b
-          >BULWARK is hereby authorized to place bait stations in and around
-          Customer's building described in the attached Subterranean Termite
-          Post-Construction Treatment Disclosure for prevention and control of
-          Subterranean Termites.</b
-        ><br /><br />
-        <b
-          >IMPORTANT: Customer understands that Bulwark will not be responsible
-          for repairs or replacement of damaged material to the structure or its
-          contents caused by Subterranean Termites or other wood destroying
-          organisms. If during the effective period of this agreement, BULWARK,
-          for whatever reason, changes the type of bait being used or ceases to
-          offer a bait program in this area, if available, an appropriate
-          alternative treatment method will be determined by and performed by
-          BULWARK. Any bait stations, equipment or devices placed or installed
-          at the Customer's property are not owned by the Customer and may be
-          removed by BULWARK at its discretion, at any time, for any reason,
-          including, but not limited to; replacement with an alternative
-          treatment method, as a practice of Integrated Pest Management, or upon
-          the termination of this Agreement, or, if Bulwark ceases to offer a
-          bait program in this area. Service includes Bait System installation
-          and Warranty as specified by BULWARK. BULWARK'S services under this
-          Agreement are expressly related to Subterranean Termites. Customer
-          expressly waives and releases BULWARK from any liability for any claim
-          for personal injury resulting from the services performed, under this
-          contract, or damages to the structure or its contents whether
-          preexisting or after the services are performed, caused by an
-          infestation of Formosan Termites, Boring Beetles, Wood Decay Fungus or
-          any other Wood Destroying organisms. Customer shall receive the
-          following Guarantee after the initial service is performed.</b
-        >
-        <br /><br /><b class="title"
-          >RENEWABLE SUBTERRANEAN TERMITE RETREATMENT GUARANTEE</b
-        ><br /><br />So long as Customer complies with the Customer obligations
-        below, and provided that all payments of the applicable Retreatment
-        Guarantee Fees are current, if Bulwark is notified that an infestation
-        of Subterranean Termites has been found, Bulwark will, on inspection,
-        either retreat the structure for Subterranean Termites at no additional
-        cost to the Customer or Customer may cancel this agreement. CUSTOMER
-        EXPRESSLY RELEASES BULWARK FROM ANY AND ALL CLAIMS FOR PERSONAL INJURY,
-        PROPERTY DAMAGE, AND FOR SUBTERRANEAN TERMITE DAMAGE OR REPAIR.<br /><br /><b
-          class="title"
-          >CUSTOMER'S OBLIGATIONS TO MAINTAIN RETREATMENT GUARANTEE</b
-        ><br /><br />Customer shall make the premises and structure(s) on
-        premises available to BULWARK for inspections and treatments, as BULWARK
-        deems necessary, which may include the removal of floor coverings, wall
-        coverings and fixtures. Failure to honor the requirements to maintain
-        the structure or to allow BULWARK access for inspections or treatments
-        as appropriate will void the Retreatment Guarantee.<br /><br /><b
-          class="title"
-          >PAYMENTS</b
-        ><br /><br />This Agreement is not a written estimate, but rather
-        represents a verbal estimate for service at said property. This
-        estimated price and proposed treatment technique are subject to change
-        after a physical inspection of the property is performed by a Bulwark
-        Inspector. This may include extra charges for costlier treatment
-        techniques or additional control measures needed. The initial payment
-        covers the installation of the bait stations and/or the liquid
-        treatment, and is due at the time the initial service is performed.
-        After the initial installation the Warranty Fee will be assessed on a
-        monthly basis. By payment of the Warranty Fee, this Agreement may be
-        renewed monthly. As long as Customer keeps the BULWARK Warranty Fee
-        current, BULWARK will monitor Customer's structure and maintain the
-        Guarantee under this Agreement.<br /><br /><b class="title"
-          >REINSPECTION</b
-        ><br /><br />BULWARK shall reinspect the treated structures on
-        Customer's premises as deemed necessary by BULWARK or as requested by
-        Customer.<br /><br /><b class="title">ARBITRATION</b><br /><br />IN THE
-        EVENT OF ANY DISPUTE ARISING OUT OF OR RELATING TO THE SERVICES
-        PERFORMED UNDER THIS AGREEMENT OR TORT CLAIMS FOR PERSONAL OR BODILY
-        INJURY OR DAMAGE TO REAL OR PERSONAL PROPERTY, THE PARTIES FIRST AGREE
-        TO PARTICIPATE IN AT LEAST FOUR (4) HOURS OF MEDIATION IN ACCORDANCE
-        WITH THE COMMERCIAL MEDIATION RULES OF THE AMERICAN ARBITRATION
-        ASSOCIATION BEFORE HAVING RECOURSE TO ARBITRATION. IF THE MEDIATION
-        PROCEDURE PROVIDED FOR HEREIN DOES NOT RESOLVE SUCH DISPUTE, THE PARTIES
-        AGREE THAT ALL CONTROVERSIES OR CLAIMS ARISING OUT OF OR RELATING TO
-        THIS AGREEMENT, OR THE BREACH THEREOF, SHALL BE SETTLED BY ARBITRATION
-        ADMINISTERED BY THE AMERICAN ARBITRATION ASSOCIATION UNDER ITS
-        COMMERCIAL ARBITRATION RULES, AND JUDGMENT ON THE AWARD RENDERED BY THE
-        ARBITRATOR(S) MAY BE ENTERED IN ANY COURT HAVING JURISDICTION THEREOF.
-        THE ARBITRATOR SHALL GIVE EFFECT TO ANY AND ALL WAIVERS, RELEASED,
-        DISCLAIMERS, LIMITATIONS AND OTHER TERMS AND CONDITIONS OF THIS
-        AGREEMENT, AS WELL AS LEGAL DEFENSES RAISED BY EITHER PARTY.<br /><br /><b
-          class="title"
-          >LIMITATION OF LIABILITY</b
-        ><br /><br />Customer waives any claims for personal injury and/or
-        property damages related to the Services BULWARK performs under this
-        Agreement. Customer agrees that BULWARK shall not be responsible for any
-        damage to Customer's premises while treating their structures, including
-        any damage to shrubs, trees, or plants. The Services performed by
-        BULWARK may include drilling through concrete or the structure itself.
-        Customer agrees that BULWARK shall not be responsible for any damage to
-        Customer's premises as a result of drilling, including but not limited
-        to damage caused to plumbing or electrical pipes, wires, or conduits. To
-        avoid potential damage, customer is advised to use a utility locating
-        service to identify the location of the utility lines in or near the
-        structures prior to BULWARK'S Services. When performing the Services, it
-        may be necessary for Customer to remove floor coverings, floors,
-        excavate crawl spaces and provide access to walls, ceilings, or floors.
-        Customer shall be responsible for the cost of dismantling and
-        reconstruction of any item required in order to provide adequate access
-        for providing Services. Customer acknowledges that modifications or
-        alterations to the structure during this agreement may void this
-        Retreatment Guarantee. Customer is advised to notify BULWARK in advance
-        to determine whether such modifications or alterations will void the
-        Retreatment Guarantee or if additional Services will be required at an
-        additional cost to the Customer in order to validate the Retreatment
-        Guarantee. Customer expressly waives and releases BULWARK from and
-        against any claims for (a) loss of use or diminution of property value,
-        (b) economic, compensatory, incidental, or consequential damages and/or
-        (c) exemplary or punitive damages. Customer further agrees that under no
-        circumstances shall BULWARK be liable for any amount greater than the
-        amount paid by Customer to BULWARK for the Services performed.
-        <br /><br /><b class="title">TRANSFER</b><br /><br />This Agreement is
-        transferable to a new property owner upon written notice to BULWARK and
-        new owner's assumption of the Retreatment Guarantee fee.
-
-        <br /><br /><b class="title">CHEMICAL SENSITIVITY</b><br /><br />At
-        times additional termiticides may be used to control termites. These
-        additional termiticides may have some odor which may be present for a
-        short time after application. If you or any member of your household
-        believes you have a sensitivity to chemical odor or chemicals, Bulwark
-        recommends that you not have any Services performed at your premises
-        until you have consulted with your family physician. At your request,
-        Bulwark will provide information about the chemicals to be used in
-        treating the premises.
-
-        <br /><br /><b class="title">AGREEMENT</b><br /><br />This Agreement
-        shall be the entire Agreement between Customer and BULWARK for the
-        Services. The terms and the guarantee stated in this Agreement may not
-        be amended or altered unless a written change is approved and signed by
-        The Director of Operations of BULWARK EXTERMINATING, LLC.
-
-        <br /><br /><b class="title"
-          >FORCE MAJEURE (Circumstances beyond BULWARK'S control)</b
-        ><br /><br />BULWARK'S obligations under this Agreement shall be
-        suspended or canceled if Bulwark is unable to perform its
-        responsibilities due to a substantial change of circumstances,
-        including, but not limited to acts of war, strikes, pandemics,
-        unavailability of termiticides, or other supplies from ordinary sources,
-        or if acts of God or natural occurrences, such as earthquakes, storms,
-        fires and floods substantially alters or destroys the effectiveness of
-        Bulwark's treatment.
-
-        <br /><br /><b class="title">TERMINATION</b><br /><br />BULWARK may
-        terminate this Agreement, including the Guarantee and any renewal
-        rights, contained herein, if Customer does not meet its payment or other
-        Customer obligations, or in the event of a change in state, federal, or
-        local law that substantially affects BULWARK'S obligations under this
-        Agreement. Customer may cancel this agreement at any time prior to
-        midnight of the third business day after the date of this transaction.
-        After midnight of the third business day after the date of this
-        transaction, either party may cancel this agreement giving 30 days
-        written notice to the other party. Any amounts due and unpaid under this
-        Agreement are subject to late fees of ten percent (10%) of the unpaid
-        amount and interest at the rate of ten percent (10%) per annum, as well
-        as attorney fees and collection costs whether or not suit is brought.
-      </p>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div class="form-container">
-        <div class="form-section signature-section">
-          <label for="signature"><b>Customer Signature</b>:</label>
-          <div class="signature-box">
-            <span style="color: rgb(150, 9, 9)"
-              >X<img
-                src="https://s3.us-west-2.amazonaws.com/assets.bulwarkpest.com/neighborhood/test/john_doe.png"
-                alt="signature"
-                id="signature"
-            /></span>
-          </div>
-        </div>
-
-        <div class="form-section date-section">
-          <label for="date"><b>Today's Date</b>:</label>
-          <div class="date-box">
-            <span>2023-11-08</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="checkbox-group">
-        <input type="radio" id="owner" name="role" value="owner" checked />
-        <label for="owner">Owner</label>
-        <input type="radio" id="lessee" name="role" value="lessee" {{signee}} />
-        <label for="lessee">Lessee</label>
-        <input type="radio" id="agent" name="role" value="agent" {{signee}} />
-        <label for="agent">Agent</label>
-      </div>
-      <br />
-      <div id="timetable">
-        <p style="color: rgb(160, 160, 160)"><b>FOR BULWARK USE</b></p>
-        <table>
-          <tr>
-            <td>Witness: Dexter Davenport</td>
-          </tr>
-          <tr>
-            <td>Employee ID: 123456</td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Created on 2023-11-08 22:33:22.358 <i>(UTC)</i></td>
-          </tr>
-          <tr>
-            <td>Opened on 2023-11-08 22:34:00.448 <i>(UTC)</i></td>
-          </tr>
-          <tr>
-            <td>Signed on 2023-11-08 22:46:42.110 <i>(UTC)</i></td>
-          </tr>
-          <tr>
-            <td>Submitted on 2023-11-08 22:46:09.075 <i>(UTC)</i></td>
-          </tr>
-          <tr>
-            <td>Saved on 2023-11-08 22:46:20.908 <i>(UTC)</i></td>
-          </tr>
-        </table>
-      </div>
     </div>
-  </body>
+
+    <h2 class="title">Customer Information</h2>
+    <div class="customer-info">
+        <p>
+            <b>Name</b>: John Doe<br />
+            <b>Address</b>: 1234 Main St, Austin, TX 78704<br />
+            <b>Phone Number</b>: (123) 456-7890<br />
+            <b>Email</b>: john.doe@email.com<br />
+            <b>Billing Name</b>: John Doe<br />
+            <b>Billing Address</b>: 1234 Main St, Austin, TX 78704<br />
+        </p>
+    </div>
+    <h1>Termite Control Plan(s) and Price(s)</h1>
+
+    <h2 class="title">Termite Protection (Estimate)</h2>
+
+    <table class="service-table">
+        <tr class="service-table-header">
+            <td class="service-table-header-service"></td>
+            <td class="service-table-header-price">Price</td>
+            <td class="service-table-header-discount">Discount</td>
+            <td class="service-table-header-subtotal">Subtotal</td>
+        </tr>
+
+        <tr class="service-table-row">
+            <td class="service-table-service">Termite Bait Station Installation <br><span class="service-table-description">Install termite preventing devices around the property</span></td>
+            <td class="service-table-item">$579.00</td>
+            <td class="service-table-item discount-price"></td>
+            <td class="service-table-item"">$579.00</td>
+        </tr>
+        <tr class="service-table-row">
+            <td class="service-table-service taxes">Taxes</td>
+            <td class="service-table-item">$12.29</td>
+            <td class="service-table-item"></td>
+            <td class="service-table-item">$588.29</td>
+        </tr>
+        <tr class="service-table-total">
+            <td class="service-table-total-cost">Total Cost</td>
+            <td class="service-table-item"></td>
+            <td class="service-table-item"></td>
+            <td class="service-table-item">$588.29</td>
+        </tr>
+    </table>
+
+
+
+    <h2 class="title">Recurring Termite Services</h2>
+
+    <table class="service-table">
+        <tr class="service-table-header">
+            <td class="service-table-header-service"></td>
+            <td class="service-table-header-price">Price</td>
+            <td class="service-table-header-discount">Frequency</td>
+        </tr>
+        <tr class="service-table-row-no-line">
+            <td class="service-table-service">Termite Bait Station Warranty<br><span class="service-table-description">Comprehensive warranty for termite bait stations, ensuring  long-term protection against termites.</span></td>
+            <td class="service-table-item">$33.00 + tax</td>
+            <td class="service-table-item">Monthly</td>
+        </tr>
+
+    </table>
+
+
+
+
+    <h2 class="title">Treatment Info</h2>
+    <div class="treatment-info">
+        <p>
+            <b>Structure to be Treated</b>: Residential, 0<br />
+            <b>Agreement Length</b>: Ongoing<br />
+            <b>Payment Type</b>: PIF
+        </p>
+    </div>
+
+    <h2 class="title guarantee-title">Bulwark's Guarantee</h2>
+    <p class="guarantee">
+        Bulwark guarantees to shield your home from subterranean termites with the most advanced environmentally friendly methods for the duration of this agreement. If termites return during this guarantee, then Bulwark will return as well to eliminate them at no additional cost to you.
+    </p>
+
+    <hr />
+
+    <div class="fine-print">
+
+        <p class="content-no-title">
+            BULWARK is hereby authorized to place bait stations in and around Customer's building described in the attached Subterranean Termite Post-Construction Treatment Disclosure for prevention and control of Subterranean Termites.
+        </p>
+
+        <p class="content-no-title">
+            IMPORTANT: Customer understands that Bulwark will not be responsible for repairs or replacement of damaged material to the structure or its contents caused by Subterranean Termites or other wood destroying organisms. If during the effective period of this agreement, BULWARK, for whatever reason, changes the type of bait being used or ceases to offer a bait program in this area, if available, an appropriate alternative treatment method will be determined by and performed by BULWARK. Any bait stations, equipment or devices placed or installed at the Customer's property are not owned by the Customer and may be removed by BULWARK at its discretion, at any time, for any reason, including, but not limited to; replacement with an alternative treatment method, as a practice of Integrated Pest Management, or upon the termination of this Agreement, or, if Bulwark ceases to offer a bait program in this area. Service includes Bait System installation and Warranty as specified by BULWARK. BULWARK'S services under this Agreement are expressly related to Subterranean Termites. Customer expressly waives and releases BULWARK from any liability for any claim for personal injury resulting from the services performed, under this contract, or damages to the structure or its contents whether preexisting or after the services are performed, caused by an infestation of Formosan Termites, Boring Beetles, Wood Decay Fungus or any other Wood Destroying organisms. Customer shall receive the following Guarantee after the initial service is performed.
+        </p>
+
+        <h3 class="fine-print-title">RENEWABLE SUBTERRANEAN TERMITE RETREATMENT GUARANTEE</h3>
+        <p>
+            So long as Customer complies with the Customer obligations below, and provided that all payments of the applicable Retreatment Guarantee Fees are current, if Bulwark is notified that an infestation of Subterranean Termites has been found, Bulwark will, on inspection, either retreat the structure for Subterranean Termites at no additional cost to the Customer or Customer may cancel this agreement. CUSTOMER EXPRESSLY RELEASES BULWARK FROM ANY AND ALL CLAIMS FOR PERSONAL INJURY, PROPERTY DAMAGE, AND FOR SUBTERRANEAN TERMITE DAMAGE OR REPAIR.
+        </p>
+
+        <h3 class="fine-print-title">CUSTOMER'S OBLIGATIONS TO MAINTAIN RETREATMENT GUARANTEE</h3>
+        <p>
+            Customer shall make the premises and structure(s) on premises available to BULWARK for inspections and treatments, as BULWARK deems necessary, which may include the removal of floor coverings, wall coverings and fixtures. Failure to honor the requirements to maintain the structure or to allow BULWARK access for inspections or treatments as appropriate will void the Retreatment Guarantee.
+        </p>
+
+        <h3 class="fine-print-title">PAYMENTS</h3>
+        <p>
+            This Agreement is not a written estimate, but rather represents a verbal estimate for service at said property. This estimated price and proposed treatment technique are subject to change after a physical inspection of the property is performed by a Bulwark Inspector. This may include extra charges for costlier treatment techniques or additional control measures needed. The initial payment covers the installation of the bait stations and/or the liquid treatment, and is due at the time the initial service is performed. After the initial installation the Warranty Fee will be assessed on a monthly basis. By payment of the Warranty Fee, this Agreement may be renewed monthly. As long as Customer keeps the BULWARK Warranty Fee current, BULWARK will monitor Customer's structure and maintain the Guarantee under this Agreement.
+        </p>
+
+        <h3 class="fine-print-title">REINSPECTION</h3>
+        <p>
+            BULWARK shall reinspect the treated structures on Customer's premises as deemed necessary by BULWARK or as requested by Customer.
+        </p>
+
+        <h3 class="fine-print-title">ARBITRATION</h3>
+        <p>
+            IN THE EVENT OF ANY DISPUTE ARISING OUT OF OR RELATING TO THE SERVICES PERFORMED UNDER THIS AGREEMENT OR TORT CLAIMS FOR PERSONAL OR BODILY INJURY OR DAMAGE TO REAL OR PERSONAL PROPERTY, THE PARTIES FIRST AGREE TO PARTICIPATE IN AT LEAST FOUR (4) HOURS OF MEDIATION IN ACCORDANCE WITH THE COMMERCIAL MEDIATION RULES OF THE AMERICAN ARBITRATION ASSOCIATION BEFORE HAVING RECOURSE TO ARBITRATION. IF THE MEDIATION PROCEDURE PROVIDED FOR HEREIN DOES NOT RESOLVE SUCH DISPUTE, THE PARTIES AGREE THAT ALL CONTROVERSIES OR CLAIMS ARISING OUT OF OR RELATING TO THIS AGREEMENT, OR THE BREACH THEREOF, SHALL BE SETTLED BY ARBITRATION ADMINISTERED BY THE AMERICAN ARBITRATION ASSOCIATION UNDER ITS COMMERCIAL ARBITRATION RULES, AND JUDGMENT ON THE AWARD RENDERED BY THE ARBITRATOR(S) MAY BE ENTERED IN ANY COURT HAVING JURISDICTION THEREOF. THE ARBITRATOR SHALL GIVE EFFECT TO ANY AND ALL WAIVERS, RELEASED, DISCLAIMERS, LIMITATIONS AND OTHER TERMS AND CONDITIONS OF THIS AGREEMENT, AS WELL AS LEGAL DEFENSES RAISED BY EITHER PARTY.
+        </p>
+
+        <h3 class="fine-print-title">LIMITATION OF LIABILITY</h3>
+        <p>
+            Customer waives any claims for personal injury and/or property damages related to the Services BULWARK performs under this Agreement. Customer agrees that BULWARK shall not be responsible for any damage to Customer's premises while treating their structures, including any damage to shrubs, trees, or plants. The Services performed by BULWARK may include drilling through concrete or the structure itself. Customer agrees that BULWARK shall not be responsible for any damage to Customer's premises as a result of drilling, including but not limited to damage caused to plumbing or electrical pipes, wires, or conduits. To avoid potential damage, customer is advised to use a utility locating service to identify the location of the utility lines in or near the structures prior to BULWARK'S Services. When performing the Services, it may be necessary for Customer to remove floor coverings, floors, excavate crawl spaces and provide access to walls, ceilings, or floors. Customer shall be responsible for the cost of dismantling and reconstruction of any item required in order to provide adequate access for providing Services. Customer acknowledges that modifications or alterations to the structure during this agreement may void this Retreatment Guarantee. Customer is advised to notify BULWARK in advance to determine whether such modifications or alterations will void the Retreatment Guarantee or if additional Services will be required at an additional cost to the Customer in order to validate the Retreatment Guarantee. Customer expressly waives and releases BULWARK from and against any claims for (a) loss of use or diminution of property value, (b) economic, compensatory, incidental, or consequential damages and/or (c) exemplary or punitive damages. Customer further agrees that under no circumstances shall BULWARK be liable for any amount greater than the amount paid by Customer to BULWARK for the Services performed.
+        </p>
+
+        <h3 class="fine-print-title">TRANSFER</h3>
+        <p>
+            This Agreement is transferable to a new property owner upon written notice to BULWARK and new owner's assumption of the Retreatment Guarantee fee.
+        </p>
+
+        <h3 class="fine-print-title">CHEMICAL SENSITIVITY</h3>
+        <p>
+            At times additional termiticides may be used to control termites. These additional termiticides may have some odor which may be present for a short time after application. If you or any member of your household believes you have a sensitivity to chemical odor or chemicals, Bulwark recommends that you not have any Services performed at your premises until you have consulted with your family physician. At your request, Bulwark will provide information about the chemicals to be used in treating the premises.
+        </p>
+
+        <h3 class="fine-print-title">AGREEMENT</h3>
+        <p>
+            This Agreement shall be the entire Agreement between Customer and BULWARK for the Services. The terms and the guarantee stated in this Agreement may not be amended or altered unless a written change is approved and signed by The Director of Operations of BULWARK EXTERMINATING, LLC.
+        </p>
+
+        <h3 class="fine-print-title">FORCE MAJEURE (Circumstances beyond BULWARK'S control)</h3>
+        <p>
+            BULWARK'S obligations under this Agreement shall be suspended or canceled if Bulwark is unable to perform its responsibilities due to a substantial change of circumstances, including, but not limited to acts of war, strikes, pandemics, unavailability of termiticides, or other supplies from ordinary sources, or if acts of God or natural occurrences, such as earthquakes, storms, fires and floods substantially alters or destroys the effectiveness of Bulwark's treatment.
+        </p>
+
+        <h3 class="fine-print-title">TERMINATION</h3>
+        <p>
+            BULWARK may terminate this Agreement, including the Guarantee and any renewal rights, contained herein, if Customer does not meet its payment or other Customer obligations, or in the event of a change in state, federal, or local law that substantially affects BULWARK'S obligations under this Agreement. Customer may cancel this agreement at any time prior to midnight of the third business day after the date of this transaction. After midnight of the third business day after the date of this transaction, either party may cancel this agreement giving 30 days written notice to the other party. Any amounts due and unpaid under this Agreement are subject to late fees of ten percent (10%) of the unpaid amount and interest at the rate of ten percent (10%) per annum, as well as attorney fees and collection costs whether or not suit is brought.
+        </p>
+
+    </div>
+
+
+    <div class="signature-container">
+        <div class="signature-section">
+            <label for="signature"><b>Customer Signature</b>:</label>
+            <div class="signature-box">
+                <span class="signature-line"><img
+                        src="https://s3.us-west-2.amazonaws.com/assets.bulwarkpest.com/neighborhood/test/john_doe.png"
+                        alt="signature"
+                        id="signature"
+                /></span>
+            </div>
+        </div>
+
+        <div class="date-section">
+            <label for="date"><b>Today's Date</b>:</label>
+            <div class="date-box">
+                <span class="date-line" id="date">2023-11-08</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="signee-selection">
+        <input type="radio" id="owner" name="role" value="owner" checked />
+        <label for="owner" class="radio-label">Owner</label>
+        <input type="radio" id="lessee" name="role" value="lessee" />
+        <label for="lessee" class="radio-label">Lessee</label>
+        <input type="radio" id="agent" name="role" value="agent" />
+        <label for="agent" class="radio-label">Agent</label>
+    </div>
+    <br />
+    <div class="timetable-section">
+        <h4>FOR BULWARK USE</h4>
+        <table class="timetable">
+            <tr>
+                <td>Witness: Dexter Davenport</td>
+            </tr>
+            <tr>
+                <td>Employee ID: 123456</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Created on 2023-11-08 22:33:22.358 <i>(UTC)</i></td>
+            </tr>
+            <tr>
+                <td>Opened on 2023-11-08 22:34:00.448 <i>(UTC)</i></td>
+            </tr>
+            <tr>
+                <td>Signed on 2023-11-08 22:46:42.110 <i>(UTC)</i></td>
+            </tr>
+            <tr>
+                <td>Submitted on 2023-11-08 22:46:09.075 <i>(UTC)</i></td>
+            </tr>
+            <tr>
+                <td>Saved on 2023-11-08 22:46:20.908 <i>(UTC)</i></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
 </html>

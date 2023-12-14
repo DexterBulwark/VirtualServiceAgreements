@@ -53,7 +53,7 @@
     "treatmentInfo": 
     {
         "lengthOfAgreement": "60 Days",
-        "TreatmentType": "Signature Service",
+        "treatmentType": "Signature Service",
         "paymentType": "CCIS Only"
     },
     "finePrint": 
