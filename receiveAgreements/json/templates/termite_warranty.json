@@ -29,27 +29,36 @@
     },
     "services": 
     {
-        "initialServiceDate": "",
-        "initialServiceTime": "",
         "initialWarrantyExtension": 
         [
             {
                 "name": "",
-                "price": 0.0,
-                "discount": 0.0
+                "description": "",
+                "price": 0.0
             }
         ],
         "initialTotalPrice": 0.0,
-        "initialServiceDiscount": 0.0,
         "recurringWarrantyExtension":
-        [
-            {
-                "name": "",
-                "price": 0.0,
-                "discount": 0.0,
-                "frequency": ""
-            }
-        ]
+        {
+            "monthly": 
+            [
+                {
+                    "name": "",
+                    "description": "",
+                    "price": 0.0
+                }
+            ],
+            "perService": 
+            [
+                {
+                    "name": "",
+                    "description": "",
+                    "price": 0.0
+                }
+            ]
+        },
+        "recurringMonthlyTotalPrice": 0.0,
+        "recurringPerServiceTotalPrice": 0.0
     },
     "treatmentInfo": 
     {
@@ -62,7 +71,10 @@
     },
     "finePrint": 
     [
-        ""   
+        {
+            "title": "",
+            "content": ""
+        }
     ],
     "signature": 
     {

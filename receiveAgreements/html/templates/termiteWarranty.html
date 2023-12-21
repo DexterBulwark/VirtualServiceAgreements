@@ -3,181 +3,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2FjY291bnRzXC80MlwvMjMzNDQ4XC9wcm9qZWN0c1wvMzMzNDY5XC9hc3NldHNcLzAwXC82MzY4NzY5XC84NmZiNmI0ZWY3YWI2MDM5ZmMyODhjMTI2OGEzODBjMi0xNjQ2ODUxNTgzLnBuZyJ9:frontify:u8wJQntkGZ1AWGF1LVcfd4qnIh0HmZ0gpKtwqLxPCnU?width=240">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"/>
-    <title>General Pest Service Agreement</title>
-    <style>
-        /* Main Contents */
-        body {
-            font-family: "Roboto", sans-serif;
-            background-color: rgb(213, 214, 214);
-            font-size: 16px;
-            line-height: 1.5;
-            margin: 0;
-        }
-        .content {
-            max-width: 1000px;
-            margin: 0 auto;
-            margin-bottom: 10px;
-            background-color: rgb(255, 255, 255);
-            padding-top: 10px;
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-bottom: 10px;
-        }
-        .title {
-            color: rgb(116, 17, 46);
-            margin-top: 60px;
-        }
+    <link rel="stylesheet" href="../styles.css"/>
+    <title>Termite Warranty Service Agreement</title>
 
-        /* Information */
-        .office-info, .customer-info{
-            max-width: 58%;
-        }
-
-        /* Service Table */
-        .service-table {
-            width: 100%;
-            color: black;
-            font-size: 16px;
-            border-collapse: collapse;
-        }
-        .service-table-row {
-            border-bottom: 1px solid #ddd;
-        }
-
-        .service-table-header {
-            font-weight: bold;
-        }
-        .service-table-header-service, .service-table-service {
-            width: 60%;
-            text-align: left;
-        }
-        .service-table-header-price, .service-table-header-discount, .service-table-header-subtotal {
-            width: 13%;
-            text-align: center;
-        }
-        .service-table-description {
-            font-size: 12px;
-            color: #606060;
-            padding: 0;
-            margin: 0;
-        }
-
-        .service-table-frequency {
-            font-size: 12px;
-            color: #606060;
-        }
-
-        .service-table-item {
-            width: 13%;
-            text-align: center;
-        }
-        .discount-price {
-            color: red
-        }
-        .service-table-total {
-            font-weight: bold;
-        }
-        .taxes {
-            padding-bottom: 20px;
-        }
-
-
-        /* Guarantee */
-        .guarantee-title {
-            margin-top: 40px;
-            text-align: center;
-        }
-        .guarantee {
-            text-align: center;
-            font-size: 17px;
-        }
-
-        /* Fine Print  */
-        .fine-print {
-            margin-bottom: 100px;
-        }
-        .content-no-title {
-            font-weight: bold;
-        }
-        .fine-print-title {
-            margin-top: 0;
-            color:rgb(116, 17, 46);
-        }
-
-        /* Signature Section */
-        .signature-container {
-            display: flex;
-            justify-content: space-between;
-        }
-        .signature-section {
-            flex: 2;
-            margin-right: 10px;
-        }
-        .date-section {
-            flex: 1;
-        }
-        .signature-box, .date-box {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            height: 150px;
-            border: 1px solid rgb(119, 107, 228);
-            padding: 10px;
-            border-radius: 10px;
-            margin-top: 5px;
-        }
-        #signature {
-            width: 100%;
-            height: 100%;
-        }
-        .signature-line, .date-line {
-            width: 100%;
-            border-bottom: 1px solid #000000;
-        }
-
-        /* Signee */
-        .signee-selection {
-            margin-top: 20px;
-        }
-        .radio-label {
-            margin-right: 20px;
-        }
-
-        /* Timetable */
-        .timetable-section {
-            color:#7e7e7e;
-            padding: 0 20px 20px 20px;
-            border: 1px solid #d6d6d6;
-            border-radius: 5px;
-        }
-        .timetable {
-            font-size: 12px;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* other */
-        h1, h4 {
-            display: flex;
-            justify-content: center;
-        }
-        h3 {
-            padding-top: 20px;
-        }
-        hr {
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-    </style>
 </head>
 <body>
 <div class="content">
-    <h1>{{title}}</h1>
-    <p style="text-align: center">
-        <b>Initial Service</b>: {{serviceDate}}, {{serviceTime}}
-    </p>
+        <h1 class="document-title">{{title}}</h1>
+
     <h2 class="title">Bulwark Exterminating</h2>
     <div class="office-info">
         <p>
@@ -192,78 +28,88 @@
     <div class="customer-info">
         <p>
             <b>Name</b>: {{customerName}}<br />
-            <b>Address</b>: {{customerStreetAddress}}, {{customerCity}}, {{customerState}} {{customerZip}}<br />
+            <b>Address</b>: {{customerAddress}}<br />
             <b>Phone Number</b>: {{customerPhone}}<br />
             <b>Email</b>: {{customerEmail}}<br />
             <b>Billing Name</b>: {{billingName}}<br />
-            <b>Billing Address</b>: {{billingStreetAddress}}, {{billingCity}}, {{billingState}} {{billingZip}}<br />
+            <b>Billing Address</b>: {{billingAddress}}<br />
         </p>
     </div>
+
     <h1>Warranty Plan(s) & Price(s)</h1>
 
-    <h2 class="title">Initial Warranty Extension</h2>
-
+    <!-- initial services -->
     <table class="service-table">
         <tr class="service-table-header">
-            <td class="service-table-header-service"></td>
+            <td class="service-table-header-service-title">Initial Warranty Extension</td>
             <td class="service-table-header-price">Price</td>
-            <td class="service-table-header-discount">Discount</td>
-            <td class="service-table-header-subtotal">Subtotal</td>
         </tr>
-
         <tr class="service-table-row">
-            <td class="service-table-service">{{serviceName}} <br><span class="service-table-description">{{serviceDescription}}</span></td>
+            <td class="service-table-service">{{serviceName}}</td>
             <td class="service-table-item">${{servicePrice}}</td>
-            <td class="service-table-item discount-price">${{serviceDiscount}}</td>
-            <td class="service-table-item"">${{serviceSubtotal}}</td>
         </tr>
         <tr class="service-table-row">
-            <td class="service-table-service taxes">Taxes</td>
+            <td class="service-table-service">Taxes</td>
             <td class="service-table-item">${{tax}}</td>
-            <td class="service-table-item"></td>
-            <td class="service-table-item">${{serviceSubtotal}}</td>
         </tr>
         <tr class="service-table-total">
-            <td class="service-table-total-cost">Total Cost</td>
-            <td class="service-table-item"></td>
-            <td class="service-table-item"></td>
-            <td class="service-table-item">${{estimatedInitialTotalCharge}}</td>
+            <td class="service-table-service">Total Initial Service Cost</td>
+            <td class="service-table-item">${{estimatedInitialTotalPrice}}</td>
         </tr>
     </table>
 
+    <br>
 
+    <!-- recurring services -->
+    <table class="service-table">
+        <tr class="service-table-header">
+            <td class="service-table-header-service-title">Recurring Termite Services</td>
+            <td class="service-table-header-price">Price/Month</td>
+        </tr>
+        <tr class="service-table-row">
+            <td class="service-table-service">{{serviceName}}<br><span class="description">{{additionalWording}}</span></td>
+            <td class="service-table-item">${{servicePrice}}</td>
+        </tr>
+        <tr class="service-table-row">
+            <td class="service-table-service">Taxes</td>
+            <td class="service-table-item">${{tax}}</td>
+        </tr>
+        <tr class="service-table-total">
+            <td class="service-table-service">Total Cost Each Month</td>
+            <td class="service-table-item">${{recurringMonthlyTotalPrice}}</td>
+        </tr>
+    </table>
 
-    <h2 class="title">Recurring Termite Services</h2>
 
     <table class="service-table">
         <tr class="service-table-header">
-            <td class="service-table-header-service"></td>
-            <td class="service-table-header-price">Price</td>
-            <td class="service-table-header-discount">Frequency</td>
+            <td class="service-table-header-service-title"></td>
+            <td class="service-table-header-price">Price/Service</td>
         </tr>
-        <tr class="service-table-row-no-line">
-            <td class="service-table-service">{{serviceName}}<br><span class="service-table-description">{{serviceDescription}}</span></td>
-            <td class="service-table-item">${{servicePrice}} + tax</td>
-            <td class="service-table-item">Monthly</td>
+        <tr class="service-table-row">
+            <td class="service-table-service">{{serviceName}}<br><span class="description">{{additionalWording}}</span></td>
+            <td class="service-table-item">${{servicePrice}}</td>
         </tr>
-
+        <tr class="service-table-row">
+            <td class="service-table-service">Taxes</td>
+            <td class="service-table-item">${{tax}}</td>
+        </tr>
+        <tr class="service-table-total">
+            <td class="service-table-service">Total Cost Each Month</td>
+            <td class="service-table-item">${{recurringPerServiceTotalPrice}}</td>
+        </tr>
     </table>
-
-
-
 
     <h2 class="title">Treatment Info</h2>
     <div class="treatment-info">
         <p>
             <b>New Home Closing Date</b>: {{newHomeClosingDate}}<br />
-            <b>Builder's Guarantee Expiration Date</b>:
-            {{builderGuaranteeExpirationDate}}<br />
+            <b>Builder's Guarantee Expiration Date</b>: {{builderGuaranteeExpirationDate}}<br />
             <b>Length of Warranty Extension</b>: {{lengthOfWarrantyExtension}}<br />
-            <b>Bulwark's Guarantee Expiration Date</b>:
-            {{bulwarksGuaranteeExpirationDate}}<br />
+            <b>Bulwark's Guarantee Expiration Date</b>: {{bulwarksGuaranteeExpirationDate}}<br />
             <b>Treatment Type</b>: {{treatmentType}}<br />
             <b>Payment Type</b>: {{paymentType}}
-          </p>
+        </p>
     </div>
 
     <h2 class="title guarantee-title">Bulwark's Guarantee</h2>
@@ -281,63 +127,63 @@
 
 
     <div class="signature-container">
-      <div class="signature-section">
-          <label for="signature"><b>Customer Signature</b>:</label>
-          <div class="signature-box">
-              <span class="signature-line"><img
-                      src="{{signature}}"
-                      alt="signature"
-                      id="signature"
-              /></span>
-          </div>
-      </div>
+        <div class="signature-section">
+            <label for="signature"><b>Customer Signature</b>:</label>
+            <div class="signature-box">
+                <span class="signature-line"><img
+                        src="{{signature}}"
+                        alt="signature"
+                        id="signature"
+                /></span>
+            </div>
+        </div>
 
-      <div class="date-section">
-          <label for="date"><b>Today's Date</b>:</label>
-          <div class="date-box">
-              <span class="date-line" id="date">{{signedOn}}</span>
-          </div>
-      </div>
-  </div>
+        <div class="date-section">
+            <label for="date"><b>Today's Date</b>:</label>
+            <div class="date-box">
+                <span class="date-line" id="date">{{signedOn}}</span>
+            </div>
+        </div>
+    </div>
 
-  <div class="signee-selection">
-      <input type="radio" id="owner" name="role" value="owner" checked />
-      <label for="owner" class="radio-label">Owner</label>
-      <input type="radio" id="lessee" name="role" value="lessee" {{signee}} />
-      <label for="lessee" class="radio-label">Lessee</label>
-      <input type="radio" id="agent" name="role" value="agent" {{signee}} />
-      <label for="agent" class="radio-label">Agent</label>
-  </div>
-  <br />
-  <div class="timetable-section">
-      <h4>FOR BULWARK USE</h4>
-      <table class="timetable">
-          <tr>
-              <td>Witness: {{witnessName}}</td>
-          </tr>
-          <tr>
-              <td>Employee ID: {{witnessHrNumber}}</td>
-          </tr>
-          <tr>
-              <td></td>
-          </tr>
-          <tr>
-              <td>Created on {{createdOn}} <i>(UTC)</i></td>
-          </tr>
-          <tr>
-              <td>Opened on {{openedOn}} <i>(UTC)</i></td>
-          </tr>
-          <tr>
-              <td>Signed on {{signedOn}} <i>(UTC)</i></td>
-          </tr>
-          <tr>
-              <td>Submitted on {{submittedOn}} <i>(UTC)</i></td>
-          </tr>
-          <tr>
-              <td>Saved on {{savedOn}} <i>(UTC)</i></td>
-          </tr>
-      </table>
-  </div>
+    <div class="signee-selection">
+        <input type="radio" id="owner" name="role" value="owner" checked />
+        <label for="owner" class="radio-label">Owner</label>
+        <input type="radio" id="lessee" name="role" value="lessee" {{signee}} />
+        <label for="lessee" class="radio-label">Lessee</label>
+        <input type="radio" id="agent" name="role" value="agent" {{signee}} />
+        <label for="agent" class="radio-label">Agent</label>
+    </div>
+    <br />
+    <div class="timetable-section">
+        <h4>FOR BULWARK USE</h4>
+        <table class="timetable">
+            <tr>
+                <td>Witness: {{witnessName}}</td>
+            </tr>
+            <tr>
+                <td>Employee ID: {{witnessHrNumber}}</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Created on {{createdOn}} <i>(UTC)</i></td>
+            </tr>
+            <tr>
+                <td>Opened on {{openedOn}} <i>(UTC)</i></td>
+            </tr>
+            <tr>
+                <td>Signed on {{signedOn}} <i>(UTC)</i></td>
+            </tr>
+            <tr>
+                <td>Submitted on {{submittedOn}} <i>(UTC)</i></td>
+            </tr>
+            <tr>
+                <td>Saved on {{savedOn}} <i>(UTC)</i></td>
+            </tr>
+        </table>
+    </div>
 </div>
 </body>
 </html>

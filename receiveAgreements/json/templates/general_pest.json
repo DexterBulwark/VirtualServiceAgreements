@@ -29,46 +29,70 @@
     },
     "services": 
     {
-        "initialServiceDate": "",
-        "initialServiceTime": "",
         "initial": 
         [
             {
                 "name": "",
-                "price": 0.0,
-                "discount": 0.0
+                "description": "",
+                "price": 0.0
+            },
+            {
+                "name": "",
+                "price": 0.0
             }
         ],
         "initialTotalPrice": 0.0,
-        "recurring":
-        [
-            {
-                "name": "",
-                "price": 0.0,
-                "discount": 0.0,
-                "frequency": ""
-            }
-        ]
+        "recurring": 
+        {
+            "monthly": [
+                {
+                    "name": "",
+                    "description": "",
+                    "price": 0.0
+                },
+                {
+                    "name": "",
+                    "price": 0.0
+                }
+            ],
+            "perService": [
+                {
+                    "name": "",
+                    "description": "",
+                    "price": 0.0
+                },
+                {
+                    "name": "",
+                    "price": 0.0
+                }
+            ]
+        },
+        "recurringMonthlyTotalPrice": 0.0,
+        "recurringPerServiceTotalPrice": 0.0
     },
     "treatmentInfo": 
     {
+        "initialServiceDate": "",
+        "initialServiceTime": "",
         "lengthOfAgreement": "",
-        "TreatmentType": "",
+        "treatmentType": "",
         "paymentType": ""
     },
     "finePrint": 
     [
-        ""   
+        {
+            "title": "",
+            "content": ""
+        }
     ],
     "signature": 
     {
         "signee": "",
         "base64Image": ""
     },
-    "timestamps": 
-    {
+    "timestamps": {
         "createdOn": "",
-        "viewedOn": "",
+        "openedOn": "",
         "signedOn": "",
         "submittedOn": "",
         "savedOn": ""

@@ -29,36 +29,60 @@
     },
     "services": 
     {
-        "initialServiceDate": "",
-        "initialServiceTime": "",
         "termiteProtectionEstimate": 
         [
             {
                 "name": "",
-                "price": 0.0,
-                "discount": 0.0
-            }
-        ],
-        "estimatedInitialTotalCharge": 0.0,
-        "estimatedInitialServiceDiscount": 0.0,
-        "recurringTermiteServices":
-        [
+                "description": "",
+                "price": 0.0
+            },
             {
                 "name": "",
-                "price": 0.0,
-                "discount": 0.0,
-                "frequency": ""
+                "price": 0.0
             }
-        ]
+        ],
+        "estimatedInitialTotalPrice": 0.0,
+        "recurringTermiteServices":
+        {
+            "monthly": [
+                {
+                    "name": "",
+                    "description": "",
+                    "price": 0.0
+                },
+                {
+                    "name": "",
+                    "price": 0.0
+                }
+            ],
+            "perService": [
+                {
+                    "name": "",
+                    "description": "",
+                    "price": 0.0
+                },
+                {
+                    "name": "",
+                    "price": 0.0
+                }
+            ]
+        },
+        "recurringMonthlyTotalPrice": 0.0,
+        "recurringPerServiceTotalPrice": 0.0
     },
     "treatmentInfo": {
+        "initialServiceDate": "",
+        "initialServiceTime": "",
         "structureToBeTreated": "",
         "agreementLength": "",
         "paymentType": ""
     },
     "finePrint": 
     [
-        ""   
+        {
+            "title": "",
+            "content": ""
+        }
     ],
     "signature": 
     {
@@ -68,7 +92,7 @@
     "timestamps": 
     {
         "createdOn": "",
-        "viewedOn": "",
+        "openedOn": "",
         "signedOn": "",
         "submittedOn": "",
         "savedOn": ""
